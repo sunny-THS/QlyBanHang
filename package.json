@@ -1,0 +1,20 @@
+{
+  "name": "QlyBanHang",
+  "version": "1.0.0",
+  "description": "webservice quan ly ban hang",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "keywords": [],
+  "author": "Tu Hue Son <tuhueson@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "address": "^1.1.2",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.8",
+    "nodemon": "^2.0.15"
+  }
+}

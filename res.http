@@ -1,0 +1,32 @@
+GET http://localhost:5123/products/
+
+{
+
+}
+###
+GET http://localhost:5123/products/Adapter
+
+{
+
+}
+
+### danh mục sản phẩm
+GET http://localhost:5123/products/category
+
+{
+
+}
+
+### loại sản phẩm theo danh mục
+GET http://localhost:5123/products/category/Phụ kiện
+
+{
+
+}
+
+### hãng sản phẩm
+GET http://localhost:5123/products/company
+
+{
+
+}

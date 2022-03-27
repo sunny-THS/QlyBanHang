@@ -1,0 +1,77 @@
+  iPhone 12 64GB ,  iPhone , 50, 20490000, ,  iPhone12_64.jpg ,  iPhone(iOS) 
+  iPhone 13 Pro Max 1TB ,  iPhone , 50, 49990000, ,  iPhone13ProMax_1.jpg ,  iPhone(iOS) 
+  iPhone 13 Pro 1TB ,  iPhone , 50, 46990000, ,  iPhone13Pro_1.jpg ,  iPhone(iOS) 
+  iPhone 13 Pro Max 512GB ,  iPhone , 50, 43990000, ,  iPhone13ProMax_512.jpg ,  iPhone(iOS) 
+  iPhone 13 Pro 512GB ,  iPhone , 50, 40990000, ,  iPhone13Pro_512.jpg ,  iPhone(iOS) 
+  iPhone 12 Pro Max 512GB ,  iPhone , 50, 39990000, ,  iPhone12Pro_512.jpg ,  iPhone(iOS) 
+  iPhone 13 mini 256GB ,  iPhone , 50, 24990000, ,  iPhone13Mini_256.jpg ,  iPhone(iOS) 
+  iPhone 11 128GB ,  iPhone , 50, 18990000, ,  iPhone11_128.jpg ,  iPhone(iOS) 
+  iPhone XR 128GB ,  iPhone , 50, 16490000, ,  iPhoneXR_128.jpg ,  iPhone(iOS) 
+  Samsung Galaxy Z Fold3 5G 512GB ,  SAMSUNG , 50, 43990000, ,  samsungGalaxyZFold3_512.jpg ,  Android 
+  Samsung Galaxy A03s ,  SAMSUNG , 50, 3690000, ,  samsungGalaxyA03s.jpg ,  Android 
+  Samsung Galaxy M51 ,  SAMSUNG , 50, 9490000, ,  samsungGalaxyM51.jpg ,  Android 
+  Samsung Galaxy Z Flip3 5G 256GB ,  SAMSUNG , 50, 25990000, ,  samsungGalaxyZFlip3_256.jpg ,  Android 
+  OPPO Reno6 Z 5G ,  OPPO , 50, 9490000, ,  oppoReno6Z.jpg ,  Android 
+  OPPO A74 ,  OPPO , 50, 6690000, ,  oppoA74.jpg ,  Android 
+  OPPO A55 ,  OPPO , 50, 4990000, ,  oppoA55.jpg ,  Android 
+  OPPO Reno5 Marvel ,  OPPO , 50, 9190000, ,  oppoReno5Marvel.jpg ,  Android 
+  Vivo Y21 ,  VIVO , 50, 4290000, ,  vivoY21.jpg ,  Android 
+  Vivo X70 Pro 5G ,  VIVO , 50, 18990000, ,  vivoX70Pro.jpg ,  Android 
+  Vivo Y72 5G ,  VIVO , 50, 7590000, ,  vivoY72.jpg ,  Android 
+  Vivo V20 SE ,  VIVO , 50, 6490000, ,  vivoV20SE.jpg ,  Android 
+  Xiaomi 11T 5G 256GB ,  XIAOMI , 50, 11990000, ,  xiaomi11T_256.jpg ,  Android 
+  Xiaomi 11 Lite 5G NE ,  XIAOMI , 50, 9490000, ,  xiaomi11Lite.jpg ,  Android 
+  Xiaomi Redmi Note 10S ,  XIAOMI , 50, 6490000, ,  xiaomiRedmiNote10s.jpg ,  Android 
+  Xiaomi Redmi Note 9 ,  XIAOMI , 50, 4490000, ,  xiaomiRedmiNote9.jpg ,  Android 
+  Realme C21Y 4GB ,  REALME , 50, 3990000, ,  realmeC21Y.jpg ,  Android 
+  Realme 7 Pro ,  REALME , 50, 8540000, ,  realme7Pro.jpg ,  Android 
+  Realme 8 Pro Vàng Rực Rỡ ,  REALME , 50, 8240000, ,  realme8ProVang.jpg ,  Android 
+  Realme 6 Pro ,  REALME , 50, 6990000, ,  realme6Pro.jpg ,  Android 
+  Nokia 3.4 ,  NOKIA , 50, 3290000, ,  nokia34Android.jpg ,  Android 
+  Nokia C30 ,  NOKIA , 50, 2790000, ,  nokiaC30.jpg ,  Android 
+  Nokia 210 ,  NOKIA , 50, 790000, ,  nokia210.jpg ,  Điện thoại phổ thông 
+  Nokia 6300 4G ,  NOKIA , 50, 1090000, ,  nokia6300.jpg ,  Điện thoại phổ thông 
+  Mobell P41 ,  MOBELL , 50, 990000, ,  mobellP41.jpg ,  Android 
+  Mobell Rock 3 ,  MOBELL , 50, 590000, ,  mobellRock3.jpg ,  Điện thoại phổ thông 
+  Mobell C310 ,  MOBELL , 50, 230000, ,  mobellC310.jpg ,  Điện thoại phổ thông 
+  Mobell M729 ,  MOBELL , 50, 450000, ,  mobellM729.jpg ,  Điện thoại phổ thông 
+  Itel L6006 ,  INTEL , 50, 2190000, ,  itelL6006.jpg ,  Android 
+  Itel it9200 4G ,  INTEL , 50, 700000, ,  itelIt9200.jpg ,  Điện thoại phổ thông 
+  Itel it2590 ,  INTEL , 50, 450000, ,  itelIt2590.jpg ,  Điện thoại phổ thông 
+  Itel it5071 ,  INTEL , 50, 330000, ,  itelIt5071.jpg ,  Điện thoại phổ thông 
+  Masstel Fami P20 ,  MASSTEL , 50, 550000, ,  masstelFamiP20.jpg ,  Điện thoại phổ thông 
+  Masstel Play 50 ,  MASSTEL , 50, 500000, ,  masstelPlay50.jpg ,  Điện thoại phổ thông 
+  Masstel IZI 300 ,  MASSTEL , 50, 450000, ,  masstelIzi300.jpg ,  Điện thoại phổ thông 
+  Masstel IZI 230 ,  MASSTEL , 50, 380000, ,  masstelIzi230.jpg ,  Điện thoại phổ thông 
+  Energizer E241S ,  Energizer , 50, 890000, ,  energizerE241s.jpg ,  Điện thoại phổ thông 
+  Energizer E20 ,  Energizer , 50, 650000, ,  energizerE20.jpg ,  Điện thoại phổ thông 
+  Energizer P20 ,  Energizer , 50, 590000, ,  energizerP20.jpg ,  Điện thoại phổ thông 
+  Energizer E100 ,  Energizer , 50, 490000, ,  energizerE100.jpg ,  Điện thoại phổ thông 
+  Pin sạc dự phòng Polymer 10.000 mAh Type C Xiaomi Power Bank 3 Ultra Compact ,  XIAOMI , 50, 474000,  Trung Quốc ,  polymerXiaomiUltraCompact.jpg ,  Pin sạc dự phòng 
+  Pin sạc dự phòng Polymer 10.000mAh Type C Fast Charge Xiaomi Mi Power Bank 3 ,  XIAOMI , 50, 374000,  Trung Quốc ,  pinsacduphongpolymer.jpg ,  Pin sạc dự phòng 
+  Pin sạc dự phòng Polymer 10.000 mAh Type C PD Samsung EB-P3300 ,  SAMSUNG , 50, 693000,  Trung Quốc ,  polymersamsungebP3300.jpg ,  Pin sạc dự phòng 
+  Pin sạc dự phòng Polymer 20.000 mAh Type C PD Energizer UE20011PQ ,  Energizer , 50, 770000,  Trung Quốc ,  energizerfix2.jpg ,  Pin sạc dự phòng 
+  Adapter Sạc Type C PD 25W Samsung EP-TA800 ,  SAMSUNG , 50, 490000,  Việt Nam ,  type-c-pdsamsungTa800n.jpg ,  Cáp sạc 
+  Cáp chuyển đổi Type C sang 3.5mm Samsung EE-UC10JUW Trắng ,  SAMSUNG , 50, 220000,  Việt Nam ,  capChuyenDoisamsungeeUc10juw.jpg ,  Cáp sạc 
+  Cáp Type-C 1.2 m Energizer C41C2AGBKT Đen ,  Energizer , 50, 175000,  Trung Quốc ,  captypecEnergizec41c2agbkt.jpg ,  Cáp sạc 
+  Sạc không dây xe hơi 20W Xiaomi GDS4127GL Đen ,  XIAOMI , 50, 774000,  Trung Quốc ,  sacKhongDayXiaomiGds4127gl.jpg ,  Cáp sạc 
+  Miếng dán màn hình iPhone 13 Pro Max ,  iPhone , 50, 50000, ,  .jpg ,  Miếng dán màn hình 
+  Miếng dán kính iPhone 13 Pro Max JCPAL ,  iPhone , 50, 390000, ,  .jpg ,  Miếng dán màn hình 
+  Miếng dán full màn hình TA SHT31 Galaxy S21 Ultra ,  SAMSUNG , 50, 100000, ,  .jpg ,  Miếng dán màn hình 
+  Miếng dán màn hình Galaxy S21 ,  SAMSUNG , 50, 50000, ,  .jpg ,  Miếng dán màn hình 
+  Ốp lưng iPhone 13 Silicon OSMIA Cam , , 50, 70000, ,  oplungiphone13cam.jpg ,  Ốp lưng điện thoại 
+  Ốp lưng iPhone 13 Pro Max Nhựa cứng viền dẻo Magnets KingxBar Trắng , , 50, 245000, ,  iphone13proMaxNhuaCung.jpg ,  Ốp lưng điện thoại 
+  Ốp lưng Galaxy A71 nhựa dẻo Woven OSMIA Xanh Đậm , , 50, 49000, ,  oplunggalaxya71XanhDam.jpg ,  Ốp lưng điện thoại 
+  Ốp lưng Galaxy A71 nhựa dẻo TPU Electroplating Triple COSANO Bạc , , 50, 70000, ,  oplunggalaxy-a71nhuadeo.jpg ,  Ốp lưng điện thoại 
+  Gậy chụp ảnh Bluetooth Tripod Xmobile K06 Đen , , 50, 240000, ,  gayChupAnhxmobileK06.jpg ,  Gậy tự sướng 
+  Gậy Chụp Ảnh Bluetooth Cosano HD-P7 , , 50, 120000, ,  gayChupAnhCosanoP7.jpg ,  Gậy tự sướng 
+  Gậy Chụp Ảnh Xmobile Hình Cô gái CSA005 , , 50, 72000, ,  gayChupAnhCoGaiHong.jpg ,  Gậy tự sướng 
+  Gậy Chụp Ảnh Osmia OW5 , , 50, 70000, ,  gayChupAnhOw5.jpg ,  Gậy tự sướng 
+  Dây đeo điện thoại OSMIA silicon CRS , , 50, 24000, ,  .jpg ,  Đế móc điện thoại 
+  Bộ 2 móc điện thoại OSMIA CK-CRS10 Mèo cá heo xanh , , 50, 48000, ,  .jpg ,  Đế móc điện thoại 
+  Bộ 2 móc điện thoại OSMIA CK-CRS11 Hươu cánh cụt vàng , , 50, 48000, ,  .jpg ,  Đế móc điện thoại 
+  Bộ 2 móc điện thoại nhựa dẻo OSMIA CK-CRS3 Nai Mèo Đen , , 50, 32000, ,  .jpg ,  Đế móc điện thoại 
+  Túi chống nước Cosano JMG-C-20 Xanh lá , , 50, 40000, ,  .jpg ,  Túi chống nước 
+  Túi chống nước Cosano JMG-C-21 Xanh biển , , 50, 40000, ,  .jpg ,  Túi chống nước 
+  Túi chống nước Cosano 5 inch Vàng Chanh , , 50, 40000, ,  .jpg ,  Túi chống nước 
+  Túi chống nước 5 inch Cosano Hình Chú mèo , , 50, 40000, ,  .jpg ,  Túi chống nước 

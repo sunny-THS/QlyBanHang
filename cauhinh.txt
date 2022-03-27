@@ -1,0 +1,463 @@
+ Energizer E100, Màn hình, TFT LCD, 2.4", 65.536 màu
+ Energizer E100, Camera sau, 0.3 MP
+ Energizer E100, SIM, 2 SIM thường, Hỗ trợ 4G
+ Energizer E100, Pin, 1500 mAh
+ Energizer E100, Danh bạ, 300 số
+ Energizer E100, Thẻ nhớ, MicroSD, hỗ trợ tối đa 16 GB
+ Energizer E100, Radio FM, Có
+ Energizer E100, Jack cắm tai nghe, 3.5 mm
+~ Energizer E20, Màn hình, TFT LCD, 2.8", 262.144 màu
+ Energizer E20, Camera sau, 0.3 MP
+ Energizer E20, SIM, 2 SIM thường, Hỗ trợ 4G
+ Energizer E20, Pin, 1000 mAh
+ Energizer E20, Danh bạ, 300 số
+ Energizer E20, Thẻ nhớ, MicroSD, hỗ trợ tối đa 16 GB
+ Energizer E20, Radio FM, Có
+ Energizer E20, Jack cắm tai nghe, 3.5 mm
+~ Energizer P20, Màn hình, TFT LCD, 2.8", 262.144 màu
+ Energizer P20, Camera sau, 0.3 MP
+ Energizer P20, SIM, 2 SIM thường, Hỗ trợ 4G
+ Energizer P20, Pin, 4000 mAh
+ Energizer P20, Danh bạ, 300 số
+ Energizer P20, Thẻ nhớ, MicroSD, hỗ trợ tối đa 16 GB
+ Energizer P20, Radio FM, Có
+ Energizer P20, Jack cắm tai nghe, 3.5 mm
+~ Energizer E241S, Màn hình, TFT LCD, 2.4", 16 triệu màu
+ Energizer E241S, Camera sau, QVGA (320 x 240 pixels)
+ Energizer E241S, Camera trước, VGA (0.3 MP)
+ Energizer E241S, SIM, 2 Micro SIM, Hỗ trợ 4G
+ Energizer E241S, Pin, 1900 mAh
+ Energizer E241S, Danh bạ, 300 số
+ Energizer E241S, Thẻ nhớ, MicroSD, hỗ trợ tối đa 32 GB
+ Energizer E241S, Radio FM, Có
+ Energizer E241S, Jack cắm tai nghe, 3.5 mm
+~ Masstel IZI 230, Màn hình, TFT LCD, 2.4", 262.144 màu
+ Masstel IZI 230, Camera sau, 0.08 MP
+ Masstel IZI 230, SIM, 2 SIM thường, Hỗ trợ 2G
+ Masstel IZI 230, Pin, 1700 mAh
+ Masstel IZI 230, Danh bạ, 300 số
+ Masstel IZI 230, Thẻ nhớ, MicroSD, hỗ trợ tối đa 16 GB
+ Masstel IZI 230, Radio FM, FM không cần tai nghe
+ Masstel IZI 230, Jack cắm tai nghe, 3.5 mm
+~ Masstel IZI 300, Màn hình, TFT LCD, 2.4", 65.536 màu
+ Masstel IZI 300, Camera sau, 0.08 MP
+ Masstel IZI 300, SIM, 1 Micro SIM & 1 SIM thường, Hỗ trợ 2G
+ Masstel IZI 300, Pin, 2500 mAh
+ Masstel IZI 300, Danh bạ, 300 số
+ Masstel IZI 300, Thẻ nhớ, MicroSD, hỗ trợ tối đa 16 GB
+ Masstel IZI 300, Radio FM, Có
+ Masstel IZI 300, Jack cắm tai nghe, 3.5 mm
+~ Masstel Play 50, Màn hình, TFT LCD, 2.4", 256.000 màu
+ Masstel Play 50, Camera sau, 0.08 MP
+ Masstel Play 50, SIM, 2 SIM thường, Hỗ trợ 2G
+ Masstel Play 50, Pin, 3000 mAh
+ Masstel Play 50, Danh bạ, 1000 số
+ Masstel Play 50, Thẻ nhớ, MicroSD, hỗ trợ tối đa 32 GB
+ Masstel Play 50, Radio FM, FM không cần tai nghe
+ Masstel Play 50, Jack cắm tai nghe, 3.5 mm
+~ Masstel Fami P20, Màn hình, TFT LCD, 2.2", 262.144 màu
+ Masstel Fami P20, Camera sau, 0.08 MP
+ Masstel Fami P20, SIM, 2 SIM thường, Hỗ trợ 2G
+ Masstel Fami P20, Pin, 1400 mAh
+ Masstel Fami P20, Danh bạ, 300 số
+ Masstel Fami P20, Thẻ nhớ, MicroSD, hỗ trợ tối đa 16 GB
+ Masstel Fami P20, Radio FM, Có
+ Masstel Fami P20, Jack cắm tai nghe, 3.5 mm
+~ Itel it5071, Màn hình, TFT LCD, 2.4", 65.536 màu
+ Itel it5071, Camera sau, 0.08 MP
+ Itel it5071, SIM, 2 SIM thường, Hỗ trợ 2G
+ Itel it5071, Pin, 1900 mAh
+ Itel it5071, Danh bạ, 500 số
+ Itel it5071, Thẻ nhớ, MicroSD, hỗ trợ tối đa 16 GB
+ Itel it5071, Radio FM, FM không cần tai nghe
+ Itel it5071, Jack cắm tai nghe, 3.5 mm
+~ Itel it2590, Màn hình, TFT LCD, 2.2", 65.536 màu
+ Itel it2590, Camera sau, 0.3 MP
+ Itel it2590, SIM, 2 Micro SIM, Hỗ trợ 2G
+ Itel it2590, Pin, 1900 mAh
+ Itel it2590, Danh bạ, 500 số
+ Itel it2590, Thẻ nhớ, MicroSD, hỗ trợ tối đa 32 GB
+ Itel it2590, Radio FM, Có
+ Itel it2590, Jack cắm tai nghe, 3.5 mm
+~ Itel it9200 4G, Màn hình, TFT LCD, 2.4", 262.000 màu
+ Itel it9200 4G, Camera sau, 0.3 MP
+ Itel it9200 4G, Camera trước, VGA (0.3 MP)
+ Itel it9200 4G, SIM, 2 Micro SIM, Hỗ trợ 4G
+ Itel it9200 4G, Pin, 1900 mAh
+ Itel it9200 4G, Danh bạ, Không giới hạn
+ Itel it9200 4G, Thẻ nhớ, MicroSD, hỗ trợ tối đa 128 GB
+ Itel it9200 4G, Radio FM, Có
+ Itel it9200 4G, Jack cắm tai nghe, 3.5 mm
+~ Itel L6006, Màn hình, IPS LCD, 6.1", HD+
+ Itel L6006, Hệ điều hành, Android 10 (Go Edition)
+ Itel L6006, Camera sau, Chính 5 MP & Phụ VGA
+ Itel L6006, Camera trước, 5 MP
+ Itel L6006, Chip, Spreadtrum SC9832E
+ Itel L6006, RAM, 2 GB
+ Itel L6006, Bộ nhớ trong, 32 GB
+ Itel L6006, SIM, 2 Micro SIM, Hỗ trợ 4G
+ Itel L6006, Pin, Sạc, 3000 mAh, 5 W
+~ Mobell M729, Màn hình, TFT LCD, 2.4", 65.536 màu
+ Mobell M729, Camera sau, 0.3 MP
+ Mobell M729, SIM, 2 SIM thường, Hỗ trợ 2G
+ Mobell M729, Pin, 1000 mAh
+ Mobell M729, Danh bạ, 300 số
+ Mobell M729, Thẻ nhớ, MicroSD, hỗ trợ tối đa 16 GB
+ Mobell M729, Radio FM, Có
+ Mobell M729, Jack cắm tai nghe, Micro USB
+~ Mobell C310, Màn hình, TFT LCD, 1.77", 262.000 màu
+ Mobell C310, Camera sau, 0.8 MP
+ Mobell C310, SIM, 2 SIM thường, Hỗ trợ 2G
+ Mobell C310, Pin, 800 mAh
+ Mobell C310, Danh bạ, 500 số
+ Mobell C310, Thẻ nhớ, MicroSD, hỗ trợ tối đa 32 GB
+ Mobell C310, Radio FM, Có
+ Mobell C310, Jack cắm tai nghe, 3.5 mm
+~ Mobell Rock 3, Màn hình, TFT LCD, 2.4", 65.536 màu
+ Mobell Rock 3, Camera sau, 0.08 MP
+ Mobell Rock 3, SIM, 1 Micro SIM & 1 SIM thường, Hỗ trợ 2G
+ Mobell Rock 3, Pin, 5000 mAh
+ Mobell Rock 3, Danh bạ, 200 số
+ Mobell Rock 3, Thẻ nhớ, MicroSD, hỗ trợ tối đa 8 GB
+ Mobell Rock 3, Radio FM, Có
+ Mobell Rock 3, Jack cắm tai nghe, Micro USB
+~ Mobell P41, Màn hình, IPS LCD, 5.5", FWVGA+
+ Mobell P41, Hệ điều hành, Android 8 (Oreo)
+ Mobell P41, Camera sau, 5 MP
+ Mobell P41, Camera trước, 2 MP
+ Mobell P41, Chip, MediaTek MT6580A
+ Mobell P41, RAM, 1 GB
+ Mobell P41, Bộ nhớ trong, 8 GB
+ Mobell P41, SIM, 2 Nano SIM, Hỗ trợ 3G
+ Mobell P41, Pin, Sạc, 3500 mAh, 5 W
+~ Nokia 6300 4G, Màn hình, TFT LCD, 2.4", 16 triệu màu
+ Nokia 6300 4G, Camera sau, VGA (480 x 640 pixels)
+ Nokia 6300 4G, SIM, 2 Nano SIM, Hỗ trợ 4G
+ Nokia 6300 4G, Pin, 1500 mAh
+ Nokia 6300 4G, Danh bạ, 1500 số
+ Nokia 6300 4G, Thẻ nhớ, MicroSD, hỗ trợ tối đa 32 GB
+ Nokia 6300 4G, Radio FM, Có
+ Nokia 6300 4G, Jack cắm tai nghe, 3.5 mm
+~ Nokia 210, Màn hình, TFT LCD, 2.4", 65.536 màu
+ Nokia 210, Camera sau, 0.3 MP
+ Nokia 210, SIM, 2 SIM thường, Hỗ trợ 2G
+ Nokia 210, Pin, 1020 mAh
+ Nokia 210, Danh bạ, 500 số
+ Nokia 210, Thẻ nhớ, MicroSD, hỗ trợ tối đa 32 GB
+ Nokia 210, Radio FM, Có
+ Nokia 210, Jack cắm tai nghe, 3.5 mm
+~ Nokia C30, Màn hình, IPS LCD, 6.82", HD+
+ Nokia C30, Hệ điều hành, Android 11 (Go Edition)
+ Nokia C30, Camera sau, Chính 13 MP & Phụ 2 MP
+ Nokia C30, Camera trước, 5 MP
+ Nokia C30, Chip, Spreadtrum SC9863A
+ Nokia C30, RAM, 3 GB
+ Nokia C30, Bộ nhớ trong, 32 GB
+ Nokia C30, SIM, 2 Nano SIM, Hỗ trợ 4G
+ Nokia C30, Pin, Sạc, 6000 mAh, 10 W
+~ Nokia 3.4, Màn hình, IPS LCD, 6.39", HD+
+ Nokia 3.4, Hệ điều hành, Android 10 (Android One)
+ Nokia 3.4, Camera sau, Chính 13 MP & Phụ 5 MP, 2 MP
+ Nokia 3.4, Camera trước, 8 MP
+ Nokia 3.4, Chip, Snapdragon 460
+ Nokia 3.4, RAM, 4 GB
+ Nokia 3.4, Bộ nhớ trong, 64 GB
+ Nokia 3.4, SIM, 2 Nano SIM, Hỗ trợ 4G
+ Nokia 3.4, Pin, Sạc, 4000 mAh, 10 W
+~ Realme 6 Pro, Màn hình, IPS LCD, 6.6", Full HD+
+ Realme 6 Pro, Hệ điều hành, Android 10
+ Realme 6 Pro, Camera sau, Chính 64 MP & Phụ 12 MP, 8 MP, 2 MP
+ Realme 6 Pro, Camera trước, Chính 16 MP & Phụ 8 MP
+ Realme 6 Pro, Chip, Snapdragon 720G
+ Realme 6 Pro, RAM, 8 GB
+ Realme 6 Pro, Bộ nhớ trong, 128 GB
+ Realme 6 Pro, SIM, 2 Nano SIM, Hỗ trợ 4G
+ Realme 6 Pro, Pin, Sạc, 4300 mAh, 30 W
+~ Realme 8 Pro Vàng Rực Rỡ, Màn hình, Super AMOLED, 6.4", Full HD+
+ Realme 8 Pro Vàng Rực Rỡ, Hệ điều hành, Android 11
+ Realme 8 Pro Vàng Rực Rỡ, Camera sau, Chính 108 MP & Phụ 8 MP, 2 MP, 2 MP
+ Realme 8 Pro Vàng Rực Rỡ, Camera trước, 16 MP
+ Realme 8 Pro Vàng Rực Rỡ, Chip, Snapdragon 720G
+ Realme 8 Pro Vàng Rực Rỡ, RAM, 8 GB
+ Realme 8 Pro Vàng Rực Rỡ, Bộ nhớ trong, 128 GB
+ Realme 8 Pro Vàng Rực Rỡ, SIM, 2 Nano SIM, Hỗ trợ 4G
+ Realme 8 Pro Vàng Rực Rỡ, Pin, Sạc, 4500 mAh, 50 W
+~ Realme 7 Pro, Màn hình, Super AMOLED, 6.4", Full HD+
+ Realme 7 Pro, Hệ điều hành, Android 10
+ Realme 7 Pro, Camera sau, Chính 64 MP & Phụ 8 MP, 2 MP, 2 MP
+ Realme 7 Pro, Camera trước, 32 MP
+ Realme 7 Pro, Chip, Snapdragon 720G
+ Realme 7 Pro, RAM, 8 GB
+ Realme 7 Pro, Bộ nhớ trong, 128 GB
+ Realme 7 Pro, SIM, 2 Nano SIM, Hỗ trợ 4G
+ Realme 7 Pro, Pin, Sạc, 4500 mAh, 65 W
+~ Realme C21Y 4GB, Màn hình, IPS LCD, 6.5", HD+
+ Realme C21Y 4GB, Hệ điều hành, Android 11
+ Realme C21Y 4GB, Camera sau, Chính 13 MP & Phụ 2 MP, 2 MP
+ Realme C21Y 4GB, Camera trước, 5 MP
+ Realme C21Y 4GB, Chip, Spreadtrum T610 8 nhân
+ Realme C21Y 4GB, RAM, 4 GB
+ Realme C21Y 4GB, Bộ nhớ trong, 64 GB
+ Realme C21Y 4GB, SIM, 2 Nano SIM, Hỗ trợ 4G
+ Realme C21Y 4GB, Pin, Sạc, 5000 mAh, 10 W
+~ iPhone 12 64GB, Màn hình, OLED, 6.1", Super Retina XDR
+ iPhone 12 64GB, Hệ điều hành, iOS 14
+ iPhone 12 64GB, Camera sau, 2 camera 12 MP
+ iPhone 12 64GB, Camera trước, 12 MP
+ iPhone 12 64GB, Chip, Apple A14 Bionic
+ iPhone 12 64GB, RAM, 4 GB
+ iPhone 12 64GB, Bộ nhớ trong, 64 GB
+ iPhone 12 64GB, SIM, 1 Nano SIM & 1 eSIM, Hỗ trợ 5G
+ iPhone 12 64GB, Pin, Sạc, 2815 mAh, 20 W
+~ iPhone 13 Pro Max 1TB, Màn hình, OLED, 6.7", Super Retina XDR
+ iPhone 13 Pro Max 1TB, Hệ điều hành, iOS 15
+ iPhone 13 Pro Max 1TB, Camera sau, 3 camera 12 MP
+ iPhone 13 Pro Max 1TB, Camera trước, 12 MP
+ iPhone 13 Pro Max 1TB, Chip, Apple A15 Bionic
+ iPhone 13 Pro Max 1TB, RAM, 6 GB
+ iPhone 13 Pro Max 1TB, Bộ nhớ trong, 1 TB
+ iPhone 13 Pro Max 1TB, SIM, 1 Nano SIM & 1 eSIM, Hỗ trợ 5G
+ iPhone 13 Pro Max 1TB, Pin, Sạc, 20 W
+~ iPhone 13 Pro 1TB, Màn hình, OLED, 6.1", Super Retina XDR
+ iPhone 13 Pro 1TB, Hệ điều hành, iOS 15
+ iPhone 13 Pro 1TB, Camera sau, 3 camera 12 MP
+ iPhone 13 Pro 1TB, Camera trước, 12 MP
+ iPhone 13 Pro 1TB, Chip, Apple A15 Bionic
+ iPhone 13 Pro 1TB, RAM, 6 GB
+ iPhone 13 Pro 1TB, Bộ nhớ trong, 1 TB
+ iPhone 13 Pro 1TB, SIM, 1 Nano SIM & 1 eSIM, Hỗ trợ 5G
+ iPhone 13 Pro 1TB, Pin, Sạc, 20 W
+~ iPhone 13 Pro Max 512GB, Màn hình, OLED, 6.7", Super Retina XDR
+ iPhone 13 Pro Max 512GB, Hệ điều hành, iOS 15
+ iPhone 13 Pro Max 512GB, Camera sau, 3 camera 12 MP
+ iPhone 13 Pro Max 512GB, Camera trước, 12 MP
+ iPhone 13 Pro Max 512GB, Chip, Apple A15 Bionic
+ iPhone 13 Pro Max 512GB, RAM, 6 GB
+ iPhone 13 Pro Max 512GB, Bộ nhớ trong, 512 GB
+ iPhone 13 Pro Max 512GB, SIM, 1 Nano SIM & 1 eSIM, Hỗ trợ 5G
+ iPhone 13 Pro Max 512GB, Pin, Sạc, 20 W
+~ iPhone 13 Pro 512GB, Màn hình, OLED, 6.1", Super Retina XDR
+ iPhone 13 Pro 512GB, Hệ điều hành, iOS 15
+ iPhone 13 Pro 512GB, Camera sau, 3 camera 12 MP
+ iPhone 13 Pro 512GB, Camera trước, 12 MP
+ iPhone 13 Pro 512GB, Chip, Apple A15 Bionic
+ iPhone 13 Pro 512GB, RAM, 6 GB
+ iPhone 13 Pro 512GB, Bộ nhớ trong, 512 GB
+ iPhone 13 Pro 512GB, SIM, 1 Nano SIM & 1 eSIM, Hỗ trợ 5G
+ iPhone 13 Pro 512GB, Pin, Sạc, 20 W
+~ iPhone 12 Pro Max 512GB, Màn hình, OLED, 6.7", Super Retina XDR
+ iPhone 12 Pro Max 512GB, Hệ điều hành, iOS 14
+ iPhone 12 Pro Max 512GB, Camera sau, 3 camera 12 MP
+ iPhone 12 Pro Max 512GB, Camera trước, 12 MP
+ iPhone 12 Pro Max 512GB, Chip, Apple A14 Bionic
+ iPhone 12 Pro Max 512GB, RAM, 6 GB
+ iPhone 12 Pro Max 512GB, Bộ nhớ trong, 512 GB
+ iPhone 12 Pro Max 512GB, SIM, 1 Nano SIM & 1 eSIM, Hỗ trợ 5G
+ iPhone 12 Pro Max 512GB, Pin, Sạc, 3687 mAh, 20 W
+~ iPhone 13 mini 256GB, Màn hình, OLED, 5.4", Super Retina XDR
+ iPhone 13 mini 256GB, Hệ điều hành, iOS 15
+ iPhone 13 mini 256GB, Camera sau, 2 camera 12 MP
+ iPhone 13 mini 256GB, Camera trước, 12 MP
+ iPhone 13 mini 256GB, Chip, Apple A15 Bionic
+ iPhone 13 mini 256GB, RAM, 4 GB
+ iPhone 13 mini 256GB, Bộ nhớ trong, 256 GB
+ iPhone 13 mini 256GB, SIM, 1 Nano SIM & 1 eSIM, Hỗ trợ 5G
+ iPhone 13 mini 256GB, Pin, Sạc, 2438 mAh, 20 W
+~ iPhone 11 128GB, Màn hình, IPS LCD, 6.1", Liquid Retina
+ iPhone 11 128GB, Hệ điều hành, iOS 14
+ iPhone 11 128GB, Camera sau, 2 camera 12 MP
+ iPhone 11 128GB, Camera trước, 12 MP
+ iPhone 11 128GB, Chip, Apple A13 Bionic
+ iPhone 11 128GB, RAM, 4 GB
+ iPhone 11 128GB, Bộ nhớ trong, 128 GB
+ iPhone 11 128GB, SIM, 1 Nano SIM & 1 eSIM, Hỗ trợ 4G
+ iPhone 11 128GB, Pin, Sạc, 3110 mAh, 18 W
+~ iPhone XR 128GB, Màn hình, IPS LCD, 6.1", Liquid Retina
+ iPhone XR 128GB, Hệ điều hành, iOS 14
+ iPhone XR 128GB, Camera sau, 12 MP
+ iPhone XR 128GB, Camera trước, 7 MP
+ iPhone XR 128GB, Chip, Apple A12 Bionic
+ iPhone XR 128GB, RAM, 3 GB
+ iPhone XR 128GB, Bộ nhớ trong, 128 GB
+ iPhone XR 128GB, SIM, 1 Nano SIM & 1 eSIM, Hỗ trợ 4G
+ iPhone XR 128GB, Pin, Sạc, 2942 mAh, 15 W
+~ Samsung Galaxy Z Fold3 5G 512GB, Màn hình, Dynamic AMOLED 2X, Chính 7.6" & Phụ 6.2", Full HD+
+ Samsung Galaxy Z Fold3 5G 512GB, Hệ điều hành, Android 11
+ Samsung Galaxy Z Fold3 5G 512GB, Camera sau, 3 camera 12 MP
+ Samsung Galaxy Z Fold3 5G 512GB, Camera trước, 10 MP & 4 MP
+ Samsung Galaxy Z Fold3 5G 512GB, Chip, Snapdragon 888
+ Samsung Galaxy Z Fold3 5G 512GB, RAM, 12 GB
+ Samsung Galaxy Z Fold3 5G 512GB, Bộ nhớ trong, 512 GB
+ Samsung Galaxy Z Fold3 5G 512GB, SIM, 2 Nano SIM, Hỗ trợ 5G
+ Samsung Galaxy Z Fold3 5G 512GB, Pin, Sạc, 4400 mAh, 25 W
+~ Samsung Galaxy A03s, Màn hình, PLS LCD, 6.5", HD+
+ Samsung Galaxy A03s, Hệ điều hành, Android 11
+ Samsung Galaxy A03s, Camera sau, Chính 13 MP & Phụ 2 MP, 2 MP
+ Samsung Galaxy A03s, Camera trước, 5 MP
+ Samsung Galaxy A03s, Chip, MediaTek MT6765
+ Samsung Galaxy A03s, RAM, 4 GB
+ Samsung Galaxy A03s, Bộ nhớ trong, 64 GB
+ Samsung Galaxy A03s, SIM, 2 Nano SIM, Hỗ trợ 4G
+ Samsung Galaxy A03s, Pin, Sạc, 5000 mAh, 7.75 W
+~ Samsung Galaxy M51, Màn hình, Super AMOLED Plus, 6.7", Full HD+
+ Samsung Galaxy M51, Hệ điều hành, Android 10
+ Samsung Galaxy M51, Camera sau, Chính 64 MP & Phụ 12 MP, 5 MP, 5 MP
+ Samsung Galaxy M51, Camera trước, 32 MP
+ Samsung Galaxy M51, Chip, Snapdragon 730
+ Samsung Galaxy M51, RAM, 8 GB
+ Samsung Galaxy M51, Bộ nhớ trong, 128 GB
+ Samsung Galaxy M51, SIM, 2 Nano SIM, Hỗ trợ 4G
+ Samsung Galaxy M51, Pin, Sạc, 7000 mAh, 25 W
+~ Samsung Galaxy Z Flip3 5G 256GB, Màn hình, Dynamic AMOLED 2X, Chính 6.7" & Phụ 1.9", Full HD+
+ Samsung Galaxy Z Flip3 5G 256GB, Hệ điều hành, Android 11
+ Samsung Galaxy Z Flip3 5G 256GB, Camera sau, 2 camera 12 MP
+ Samsung Galaxy Z Flip3 5G 256GB, Camera trước, 10 MP
+ Samsung Galaxy Z Flip3 5G 256GB, Chip, Snapdragon 888
+ Samsung Galaxy Z Flip3 5G 256GB, RAM, 8 GB
+ Samsung Galaxy Z Flip3 5G 256GB, Bộ nhớ trong, 256 GB
+ Samsung Galaxy Z Flip3 5G 256GB, SIM, 1 Nano SIM & 1 eSIM, Hỗ trợ 5G
+ Samsung Galaxy Z Flip3 5G 256GB, Pin, Sạc, 3300 mAh, 15 W
+~ OPPO Reno6 Z 5G, Màn hình, AMOLED, 6.43", Full HD+
+ OPPO Reno6 Z 5G, Hệ điều hành, Android 11
+ OPPO Reno6 Z 5G, Camera sau, Chính 64 MP & Phụ 8 MP, 2 MP
+ OPPO Reno6 Z 5G, Camera trước, 32 MP
+ OPPO Reno6 Z 5G, Chip, MediaTek Dimensity 800U 5G
+ OPPO Reno6 Z 5G, RAM, 8 GB
+ OPPO Reno6 Z 5G, Bộ nhớ trong, 128 GB
+ OPPO Reno6 Z 5G, SIM, 2 Nano SIM, Hỗ trợ 5G
+ OPPO Reno6 Z 5G, Pin, Sạc, 4310 mAh, 30 W
+~ OPPO A74, Màn hình, AMOLED, 6.43", Full HD+
+ OPPO A74, Hệ điều hành, Android 11
+ OPPO A74, Camera sau, Chính 48 MP & Phụ 2 MP, 2 MP
+ OPPO A74, Camera trước, 16 MP
+ OPPO A74, Chip, Snapdragon 662
+ OPPO A74, RAM, 8 GB
+ OPPO A74, Bộ nhớ trong, 128 GB
+ OPPO A74, SIM, 2 Nano SIM, Hỗ trợ 4G
+ OPPO A74, Pin, Sạc, 5000 mAh, 33 W
+~ OPPO A55, Màn hình, IPS LCD, 6.5", HD+
+ OPPO A55, Hệ điều hành, Android 11
+ OPPO A55, Camera sau, Chính 50 MP & Phụ 2 MP, 2 MP
+ OPPO A55, Camera trước, 16 MP
+ OPPO A55, Chip, MediaTek Helio G35
+ OPPO A55, RAM, 4 GB
+ OPPO A55, Bộ nhớ trong, 64 GB
+ OPPO A55, SIM, 2 Nano SIM, Hỗ trợ 4G
+ OPPO A55, Pin, Sạc, 5000 mAh, 18 W
+~ OPPO Reno5 Marvel, Màn hình, AMOLED, 6.43", HD+
+ OPPO Reno5 Marvel, Hệ điều hành, Android 11
+ OPPO Reno5 Marvel, Camera sau, Chính 64 MP & Phụ 8 MP, 2 MP, 2 MP
+ OPPO Reno5 Marvel, Camera trước, 44 MP
+ OPPO Reno5 Marvel, Chip, Snapdragon 720G
+ OPPO Reno5 Marvel, RAM, 8 GB
+ OPPO Reno5 Marvel, Bộ nhớ trong, 128 GB
+ OPPO Reno5 Marvel, SIM, 2 Nano SIM, Hỗ trợ 4G
+ OPPO Reno5 Marvel, Pin, Sạc, 4310 mAh, 50 W
+~ Vivo Y21, Màn hình, IPS LCD, 6.51", HD+
+ Vivo Y21, Hệ điều hành, Android 11
+ Vivo Y21, Camera sau, Chính 13 MP & Phụ 2 MP
+ Vivo Y21, Camera trước, 8 MP
+ Vivo Y21, Chip, MediaTek Helio P35
+ Vivo Y21, RAM, 4 GB
+ Vivo Y21, Bộ nhớ trong, 64 GB
+ Vivo Y21, SIM, 2 Nano SIM, Hỗ trợ 4G
+ Vivo Y21, Pin, Sạc, 5000 mAh, 18 W
+~ Vivo X70 Pro 5G, Màn hình, AMOLED, 6.56", Full HD+
+ Vivo X70 Pro 5G, Hệ điều hành, Android 11
+ Vivo X70 Pro 5G, Camera sau, Chính 50 MP & Phụ 12 MP, 12 MP, 8 MP
+ Vivo X70 Pro 5G, Camera trước, 32 MP
+ Vivo X70 Pro 5G, Chip, MediaTek Dimensity 1200
+ Vivo X70 Pro 5G, RAM, 12 GB
+ Vivo X70 Pro 5G, Bộ nhớ trong, 256 GB
+ Vivo X70 Pro 5G, SIM, 2 Nano SIM, Hỗ trợ 5G
+ Vivo X70 Pro 5G, Pin, Sạc, 4450 mAh, 44 W
+~ Vivo Y72 5G, Màn hình, IPS LCD, 6.58", Full HD+
+ Vivo Y72 5G, Hệ điều hành, Android 11
+ Vivo Y72 5G, Camera sau, Chính 64 MP & Phụ 8 MP, 2 MP
+ Vivo Y72 5G, Camera trước, 16 MP
+ Vivo Y72 5G, Chip, MediaTek Dimensity 700
+ Vivo Y72 5G, RAM, 8 GB
+ Vivo Y72 5G, Bộ nhớ trong, 128 GB
+ Vivo Y72 5G, SIM, 2 Nano SIM (SIM 2 chung khe thẻ nhớ), Hỗ trợ 5G
+ Vivo Y72 5G, Pin, Sạc, 5000 mAh, 18 W
+~ Vivo V20 SE, Màn hình, AMOLED, 6.44", Full HD+
+ Vivo V20 SE, Hệ điều hành, Android 10
+ Vivo V20 SE, Camera sau, Chính 48 MP & Phụ 8 MP, 2 MP
+ Vivo V20 SE, Camera trước, 32 MP
+ Vivo V20 SE, Chip, Snapdragon 665
+ Vivo V20 SE, RAM, 8 GB
+ Vivo V20 SE, Bộ nhớ trong, 128 GB
+ Vivo V20 SE, SIM, 2 Nano SIM, Hỗ trợ 4G
+ Vivo V20 SE, Pin, Sạc, 4100 mAh, 33 W
+~ Xiaomi 11T 5G 256GB, Màn hình, AMOLED, 6.67", Full HD+
+ Xiaomi 11T 5G 256GB, Hệ điều hành, Android 11
+ Xiaomi 11T 5G 256GB, Camera sau, Chính 108 MP & Phụ 8 MP, 5 MP
+ Xiaomi 11T 5G 256GB, Camera trước, 16 MP
+ Xiaomi 11T 5G 256GB, Chip, MediaTek Dimensity 1200
+ Xiaomi 11T 5G 256GB, RAM, 8 GB
+ Xiaomi 11T 5G 256GB, Bộ nhớ trong, 256 GB
+ Xiaomi 11T 5G 256GB, SIM, 2 Nano SIM, Hỗ trợ 5G
+ Xiaomi 11T 5G 256GB, Pin, Sạc, 5000 mAh, 67 W
+~ Xiaomi 11 Lite 5G NE, Màn hình, AMOLED, 6.55", Full HD+
+ Xiaomi 11 Lite 5G NE, Hệ điều hành, Android 11
+ Xiaomi 11 Lite 5G NE, Camera sau, Chính 64 MP & Phụ 8 MP, 5 MP
+ Xiaomi 11 Lite 5G NE, Camera trước, 20 MP
+ Xiaomi 11 Lite 5G NE, Chip, Snapdragon 778G 5G 8 nhân
+ Xiaomi 11 Lite 5G NE, RAM, 8 GB
+ Xiaomi 11 Lite 5G NE, Bộ nhớ trong, 128 GB
+ Xiaomi 11 Lite 5G NE, SIM, 2 Nano SIM (SIM 2 chung khe thẻ nhớ), Hỗ trợ 5G
+ Xiaomi 11 Lite 5G NE, Pin, Sạc, 4250 mAh, 33 W
+~ Xiaomi Redmi Note 9, Màn hình, IPS LCD, 6.53", Full HD+
+ Xiaomi Redmi Note 9, Hệ điều hành, Android 10
+ Xiaomi Redmi Note 9, Camera sau, Chính 48 MP & Phụ 8 MP, 2 MP, 2 MP
+ Xiaomi Redmi Note 9, Camera trước, 13 MP
+ Xiaomi Redmi Note 9, Chip, MediaTek Helio G85
+ Xiaomi Redmi Note 9, RAM, 4 GB
+ Xiaomi Redmi Note 9, Bộ nhớ trong, 128 GB
+ Xiaomi Redmi Note 9, SIM, 2 Nano SIM, Hỗ trợ 4G
+ Xiaomi Redmi Note 9, Pin, Sạc, 5020 mAh, 18 W
+~ Xiaomi Redmi Note 10S, Màn hình, AMOLED, 6.43", Full HD+
+ Xiaomi Redmi Note 10S, Hệ điều hành, Android 11
+ Xiaomi Redmi Note 10S, Camera sau, Chính 64 MP & Phụ 8 MP, 2 MP, 2 MP
+ Xiaomi Redmi Note 10S, Camera trước, 13 MP
+ Xiaomi Redmi Note 10S, Chip, MediaTek Helio G95
+ Xiaomi Redmi Note 10S, RAM, 8 GB
+ Xiaomi Redmi Note 10S, Bộ nhớ trong, 128 GB
+ Xiaomi Redmi Note 10S, SIM, 2 Nano SIM, Hỗ trợ 4G
+ Xiaomi Redmi Note 10S, Pin, Sạc, 5000 mAh, 33 W
+~ Pin sạc dự phòng Polymer 10.000 mAh Type C Xiaomi Power Bank 3 Ultra Compact, Hiệu suất sạc, 55%
+ Pin sạc dự phòng Polymer 10.000 mAh Type C Xiaomi Power Bank 3 Ultra Compact, Dung lượng pin, 10.000 mAh
+ Pin sạc dự phòng Polymer 10.000 mAh Type C Xiaomi Power Bank 3 Ultra Compact, Thời gian sạc đầy pin, 10 - 11 giờ (dùng Adapter 1A)6 - 8 giờ (dùng Adapter 2A)
+ Pin sạc dự phòng Polymer 10.000 mAh Type C Xiaomi Power Bank 3 Ultra Compact, Nguồn vào, Type C: 5V - 3A, 9V - 2.5A, 12V - 1.85AMicro USB: 5V - 2A, 9V - 2A
+ Pin sạc dự phòng Polymer 10.000 mAh Type C Xiaomi Power Bank 3 Ultra Compact, Nguồn ra, Type C: 5V - 3A, 9V - 2.5A, 12V - 1.85AUSB: 5V - 2.4A, 9V - 2.5A, 12V - 1.85A
+ Pin sạc dự phòng Polymer 10.000 mAh Type C Xiaomi Power Bank 3 Ultra Compact, Lõi pin, Polymer
+ Pin sạc dự phòng Polymer 10.000 mAh Type C Xiaomi Power Bank 3 Ultra Compact, Công nghệ/Tiện ích, Đèn LED báo hiệu Power Delivery
+ Pin sạc dự phòng Polymer 10.000 mAh Type C Xiaomi Power Bank 3 Ultra Compact, Kích thước, Dài 9 cm - Rộng 6.5 cm - Dày 2.5 cm
+ Pin sạc dự phòng Polymer 10.000 mAh Type C Xiaomi Power Bank 3 Ultra Compact, Trọng lượng, 200 g
+~ Pin sạc dự phòng Polymer 10.000mAh Type C Fast Charge Xiaomi Mi Power Bank 3, Hiệu suất sạc, 55%
+ Pin sạc dự phòng Polymer 10.000mAh Type C Fast Charge Xiaomi Mi Power Bank 3 , Dung lượng pin, 10.000 mAh
+ Pin sạc dự phòng Polymer 10.000mAh Type C Fast Charge Xiaomi Mi Power Bank 3 , Thời gian sạc đầy pin, 10 - 11 giờ (dùng Adapter 1A)3 - 4 giờ (dùng 9V/2A hoặc 12V/1.5A)5 - 6 giờ (dùng Adapter 2A)
+ Pin sạc dự phòng Polymer 10.000mAh Type C Fast Charge Xiaomi Mi Power Bank 3 , Nguồn vào, Micro USB/ Type C: 5V - 2.6A, 9V - 2.1A, 12V - 1.5A (18W MAX)
+ Pin sạc dự phòng Polymer 10.000mAh Type C Fast Charge Xiaomi Mi Power Bank 3 , Nguồn ra, USB: 5V - 2.6A, 9V - 2.1A, 12V - 1.5AUSB: 5V - 2.6A
+ Pin sạc dự phòng Polymer 10.000mAh Type C Fast Charge Xiaomi Mi Power Bank 3 , Lõi pin, Polymer
+ Pin sạc dự phòng Polymer 10.000mAh Type C Fast Charge Xiaomi Mi Power Bank 3 , Công nghệ/Tiện ích, Quick Charge 3.0. Đèn LED báo hiệu
+ Pin sạc dự phòng Polymer 10.000mAh Type C Fast Charge Xiaomi Mi Power Bank 3 , Kích thước, Dài 14.8cm - Rộng 7.4cm - Dày 1.5cm
+ Pin sạc dự phòng Polymer 10.000mAh Type C Fast Charge Xiaomi Mi Power Bank 3 , Trọng lượng, 343g
+~ Pin sạc dự phòng Polymer 10.000 mAh Type C PD Samsung EB-P3300, Hiệu suất sạc, 55%
+ Pin sạc dự phòng Polymer 10.000 mAh Type C PD Samsung EB-P3300, Dung lượng pin, 10.000 mAh
+ Pin sạc dự phòng Polymer 10.000 mAh Type C PD Samsung EB-P3300, Thời gian sạc đầy pin, 10 - 11 giờ (dùng Adapter 1A)6 - 8 giờ (dùng Adapter 2A)
+ Pin sạc dự phòng Polymer 10.000 mAh Type C PD Samsung EB-P3300, Nguồn vào, Type C: 5V - 2A, 9V - 1.67A, 12V - 2.1A (Adaptive Fast Charging)Type C: 5V - 3A, 9V - 2.77A (Power Delivery)
+ Pin sạc dự phòng Polymer 10.000 mAh Type C PD Samsung EB-P3300, Nguồn ra, USB: 5V - 2A, 9V - 1.7A, 12V - 2.1AType C: 5V - 2A, 9V - 2A, 12V - 2.1A
+ Pin sạc dự phòng Polymer 10.000 mAh Type C PD Samsung EB-P3300, Lõi pin, Polymer
+ Pin sạc dự phòng Polymer 10.000 mAh Type C PD Samsung EB-P3300, Công nghệ/Tiện ích, Super Fast Charging. Đèn LED báo hiệu Power Delivery
+ Pin sạc dự phòng Polymer 10.000 mAh Type C PD Samsung EB-P3300, Kích thước, Dài 14 cm - Ngang 7 cm - Dày 1.3 cm
+ Pin sạc dự phòng Polymer 10.000 mAh Type C PD Samsung EB-P3300, Trọng lượng, 240 g
+~ Pin sạc dự phòng Polymer 20.000 mAh Type C PD Energizer UE20011PQ, Hiệu suất sạc, 64%
+ Pin sạc dự phòng Polymer 20.000 mAh Type C PD Energizer UE20011PQ, Dung lượng pin, 20.000 mAh
+ Pin sạc dự phòng Polymer 20.000 mAh Type C PD Energizer UE20011PQ, Thời gian sạc đầy pin, 12 - 14 giờ (dùng Adapter 2A)
+ Pin sạc dự phòng Polymer 20.000 mAh Type C PD Energizer UE20011PQ, Nguồn vào, Micro USB: 5V - 2AType-C: 5V - 2A, 9V - 2A
+ Pin sạc dự phòng Polymer 20.000 mAh Type C PD Energizer UE20011PQ, Nguồn ra, Type C: 5V - 2A, 9V - 2A, 12V - 1.5AUSB: 5V - 4.5A, 9V - 2A, 12V - 1.5A
+ Pin sạc dự phòng Polymer 20.000 mAh Type C PD Energizer UE20011PQ, Lõi pin, Polymer
+ Pin sạc dự phòng Polymer 20.000 mAh Type C PD Energizer UE20011PQ, Công nghệ/Tiện ích, Auto Voltage Sensing Power Delivery
+ Pin sạc dự phòng Polymer 20.000 mAh Type C PD Energizer UE20011PQ, Kích thước, Dài 14 cm - Rộng 6.9 cm - Dày 2.8 cm
+ Pin sạc dự phòng Polymer 20.000 mAh Type C PD Energizer UE20011PQ, Trọng lượng, 415 g
