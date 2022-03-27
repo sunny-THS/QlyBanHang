@@ -31,12 +31,12 @@ app.use((err, req, res, next) => {
 });
 
 // add product ================================================================
-// const SanPham = require('./api/models/SanPham');
-// const DanhMucSP = require('./api/models/DanhMucSP');
-// const LoaiSP = require('./api/models/LoaiSP');
-// const HangSP = require('./api/models/HangSP');
+const SanPham = require('./api/models/SanPham');
+const DanhMucSP = require('./api/models/DanhMucSP');
+const LoaiSP = require('./api/models/LoaiSP');
+const HangSP = require('./api/models/HangSP');
 
-// const addData = require('./addData');
+const addData = require('./addData');
 
 // SanPham.deleteMany({}).then(rs => console.log(rs));
 // DanhMucSP.deleteMany({}).then(rs => console.log(rs));
