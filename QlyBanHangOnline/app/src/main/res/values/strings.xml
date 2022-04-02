@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">QlyBanHangOnline</string>
+
+    <!--    địa chỉ của webservice-->
+    <string name="url">http://192.168.150.1:5123</string>
 </resources>
