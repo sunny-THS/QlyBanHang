@@ -1,5 +1,4 @@
 const express = require('express');
-const address = require('address');
 
 if (process.env.NODE_ENV !== 'production')
     require('dotenv').config();
@@ -9,7 +8,7 @@ const database = require('./api/database/Mongodb')
 const rImg = require('./api/router/Image');
 const rProduct = require('./api/router/Product');
 
-const port = process.env.PORT || 5123;
+const port = process.env.PORT || 5000;
 
 const app = express();
 
@@ -84,4 +83,4 @@ const addData = require('./addData');
 // add product ================================================================
 
 
-app.listen(port, () => console.log(`Url: http://${address.ip()}:5123`));
+app.listen(port, () => console.log(`Url: http://${process.env.HOST}:${port}`));

@@ -8,9 +8,6 @@
 
 const fs = require('fs');
 const { getgid } = require('process');
-const address = require('address');
-
-const URL = `${address.ip()}:5123/images/`
 
 module.exports = {
     readFileProduct: async (filePath, callback) => {
@@ -24,7 +21,7 @@ module.exports = {
                         ten: data[0].trim(),
                         soLuong: parseInt(data[2].trim()),
                         nsx: data[4].trim(),
-                        hinhAnh: `http://${URL}${data[5].trim()}`,
+                        hinhAnh: data[5].trim(),
                         loaiSP: data[6].trim(),
                         gia: parseFloat(data[3].trim()),
                         hangSP: data[1].trim()
