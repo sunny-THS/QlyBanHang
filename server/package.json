@@ -11,6 +11,11 @@
   "author": "Tu Hue Son <tuhueson@gmail.com>",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "address": "^1.1.2",
+    "bcryptjs": "^2.4.3",
+>>>>>>> eb5bc1ce6bebf8c22d20330805044c7560a70972
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "mongoose": "^6.2.8",
