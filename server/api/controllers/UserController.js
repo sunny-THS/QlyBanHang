@@ -15,11 +15,12 @@ const authentication = {
     // REGISTER
     registerUser: async(req, res) => {
         try {
+            console.log(req.body);
             const salt = await bcrypt.genSalt();
             // hash password
-            const hashed = await bcrypt.hash(req.body.pw, salt);
+            const hashed = await bcrypt.hash(req.body.user.pw, salt);
             // check exists of user
-            await User.findOne({ account: {username: req.body.username }})  // errr
+            await User.findOne({ account: {username: req.body.user.username }}) // err
                 .then( async (user) => {
                     console.log(user);
                     if (user)
@@ -28,8 +29,15 @@ const authentication = {
                     // user is not exists
                     // create new user
                     const newUser = await new User({
-                        username: req.body.username,
-                        password: hashed
+                        account: {
+                            username: req.body.user.username,
+                            password: hashed
+                        },
+                        name: req.body.user.name,
+                        email: req.body.user.email,
+                        birdthDay: req.body.user.birdthDay,
+                        sex: req.body.user.sex, // true: male, false: female
+                        phoneNumbers: req.body.user.phoneNumbers,
                     });
                     
                     // save to mongodb

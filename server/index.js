@@ -7,14 +7,18 @@ const database = require('./api/database/Mongodb')
 
 const rImg = require('./api/router/Image');
 const rProduct = require('./api/router/Product');
+const rAuth = require('./api/router/Auth');
 
 const port = process.env.PORT || 5000;
 
 const app = express();
 
+app.use(express.json({ limit: '3mb' }));
+
 // routes
 app.use('/images', rImg);
 app.use('/products', rProduct);
+app.use('/auth', rAuth);
 
 app.use((req, res, next) => {
     const err = new Error('not found');
