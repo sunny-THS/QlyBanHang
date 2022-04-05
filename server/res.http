@@ -30,3 +30,19 @@ GET http://localhost:5123/products/company
 {
 
 }
+
+### register
+GET http://localhost:5123/auth/register
+Content-Type: application/json
+
+{
+    "user" : {
+        "username": "tuhueson",
+        "pw": "123456789",
+        "name": "Từ Huệ Sơn",
+        "email": "tuhueson@gmail.com",
+        "birdthDay": "02/05/2001",
+        "sex": true,
+        "phoneNumbers": "0938252793"
+    }
+}
