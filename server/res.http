@@ -1,10 +1,10 @@
-GET http://localhost:5123/products/
+GET http://192.168.0.106:5123/products/
 
 {
 
 }
 ###
-GET http://localhost:5123/products/Adapter
+GET http://localhost:5123/products/name/Adapter Sạc Type C PD 25W Samsung EP-TA800
 
 {
 
@@ -31,8 +31,47 @@ GET http://localhost:5123/products/company
 
 }
 
+### get bills
+GET http://localhost:5123/bills
+
+{
+    
+}
+
+### get bill's username
+GET http://localhost:5123/bills/us
+Content-Type: application/json
+
+{
+    "username": "Từ Huệ Sơn"
+}
+
+### hóa đơn 
+POST http://localhost:5123/products/buy
+Content-Type: application/json
+
+{
+    "user": {
+        "username": "tuhueson",
+        "email": "tuhueson@gmail.com",
+        "phoneNumbers": "0938252793"
+    },
+    "diaChi": "Vĩnh lộc B",
+    "chiTietDonHang":[
+        {
+            "tenSP": "Adapter Sạc Type C PD 25W Samsung EP-TA800",
+            "soLuong": 2,
+            "gia": 490000
+        },
+        {
+            "tenSP": "iPhone 13 Pro 512GB",
+            "soLuong": 1,
+            "gia": 40990000
+        }
+    ]
+}
 ### register
-GET http://localhost:5123/auth/register
+POST http://localhost:5123/auth/register
 Content-Type: application/json
 
 {
@@ -45,4 +84,12 @@ Content-Type: application/json
         "sex": true,
         "phoneNumbers": "0938252793"
     }
+}
+### login
+POST http://localhost:5123/auth/login
+Content-Type: application/json
+
+{
+    "username": "tuhueson",
+    "pw": "123456789"
 }

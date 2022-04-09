@@ -1,7 +1,7 @@
 const LoaiSP = require('../models/LoaiSP');
 
 const loai = {
-    getType: async (req, res) => {
+        getType: async (req, res) => {
         await LoaiSP.find({ tenDanhMuc: req.params.tenDanhMuc })
             .then(data => {
                 res.json(data);
