@@ -1,10 +1,11 @@
-package com.example.qlybanhangonline;
+package com.example.qlybanhangonline.obj;
 
 import androidx.annotation.NonNull;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class SanPham {
+public class SanPham implements Serializable {
     String id, ten, nsx, hinhAnh, hangSP, loaiSP;
     int soLuong;
     double gia;

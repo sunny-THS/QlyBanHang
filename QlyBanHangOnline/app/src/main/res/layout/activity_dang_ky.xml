@@ -8,29 +8,13 @@
     android:background="@drawable/background"
     >
 
-    <TextView
-        android:id="@+id/signuptitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="0dp"
-        android:gravity="center"
-        android:text="Đăng ký"
-        android:textColor="@color/white"
-        android:textSize="35dp"
-        android:textStyle="bold" />
-
     <EditText
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/signuptitle"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="0dp"
         android:background="@drawable/view"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:drawablePadding="20dp"
@@ -47,7 +31,6 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="0dp"
         android:background="@drawable/view"
         android:drawableLeft="@drawable/ic_baseline_email_24"
         android:drawablePadding="20dp"
@@ -64,7 +47,6 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="0dp"
         android:background="@drawable/view"
         android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
         android:drawablePadding="20dp"
@@ -82,7 +64,6 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="0dp"
         android:background="@drawable/view"
         android:drawableLeft="@drawable/ic_baseline_phone_24"
         android:drawablePadding="20dp"
@@ -100,45 +81,41 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="0dp"
         android:background="@drawable/view"
         android:drawableLeft="@drawable/ic_baseline_phone_24"
         android:drawablePadding="20dp"
-        android:padding="1dp">
+        android:padding="1dp"
+        android:orientation="horizontal">
 
         <EditText
             android:id="@+id/in_date"
-            android:layout_width="280dp"
+            android:layout_width="0dp"
+            android:layout_weight="4"
             android:layout_height="wrap_content"
-            android:layout_below="@id/phoned"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
-            android:layout_marginEnd="10dp"
+            android:backgroundTint="#5909E8"
             android:drawableLeft="@drawable/ic_baseline_cake_24"
             android:drawablePadding="20dp"
             android:hint="Ngày Sinh"
             android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:backgroundTint="#5909E8"/>
+            android:textColorHint="@color/white" />
 
         <ImageButton
             android:id="@+id/btn_date"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_below="@id/phoned"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="0dp"
-            android:backgroundTint="@color/teal_700"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="55dp"
+            android:layout_toRightOf="@id/in_date"
+            android:background="@null"
             android:src="@drawable/ic_baseline_calendar_today_24"
-
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            />
     </LinearLayout>
 
-    <RadioGroup
-        android:id="@+id/gender"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/date"
@@ -147,35 +124,45 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="0dp"
         android:background="@drawable/view"
-        android:orientation="horizontal"
-        android:padding="9dp">
-
+        android:id="@+id/gender"
+        >
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="5dp"
             android:drawableLeft="@drawable/ic_baseline_pregnant_woman_24"
             android:drawablePadding="20dp"
             android:text="Giới tính:"
+            android:gravity="center_vertical"
             android:textColor="@color/white"
             android:textSize="18sp" />
 
-        <RadioButton
+        <RadioGroup
+            android:id="@+id/btnGender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nam"
-            android:layout_marginLeft="50dp"
-            android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:orientation="horizontal"
+            android:paddingVertical="9dp">
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="Nữ"
-            android:textColor="@color/white"
-            android:textSize="18sp" />
-    </RadioGroup>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nam"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:text="Nữ"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RadioGroup>
+    </LinearLayout>
+
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/signupbtn"
@@ -183,11 +170,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/gender"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
-        android:backgroundTint="#A02DF3"
+        android:backgroundTint="#FF9800"
+        android:padding="10dp"
         android:text="Đăng ký ngay"
         android:textSize="15dp" />
     <TextView

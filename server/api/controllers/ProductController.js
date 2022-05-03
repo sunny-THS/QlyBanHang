@@ -8,6 +8,13 @@ const sp = {
             })
             .catch(err => res.json(err));
     },
+    getProduct_type: async(req, res) => {
+        await SanPham.find({ loaiSP: req.params.tenLoaiSP })
+            .then(data => {
+                res.json(sp.HandleHinhAnh(data));
+            })
+            .catch(err => res.json(err));
+    },
     getSomeProduct: async (req, res) => {
         const filter = { ten: {$regex: req.params.name, $options:"$i"}};
 

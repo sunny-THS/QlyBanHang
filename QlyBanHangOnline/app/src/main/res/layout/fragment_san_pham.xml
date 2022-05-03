@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    android:paddingHorizontal="5dp"
+    >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:id="@+id/imgSP"
+        android:layout_centerVertical="true"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgSP"
+        android:id="@+id/viewThongTin"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="tên sản phẩm"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <TextView
+            android:id="@+id/item_moTa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_name"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textSize="8pt"
+            android:textColor="#AFAFAF"
+            android:textAppearance="?attr/textAppearanceListItem" />
+        <TextView
+            android:id="@+id/item_Gia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_moTa"
+            android:layout_marginLeft="10dp"
+            android:text="Giá"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            android:textColor="#FA6A6A"
+            android:textAppearance="?attr/textAppearanceListItem" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -55,10 +55,10 @@
   Cáp chuyển đổi Type C sang 3.5mm Samsung EE-UC10JUW Trắng ,  SAMSUNG , 50, 220000,  Việt Nam ,  capChuyenDoisamsungeeUc10juw.jpg ,  Cáp sạc 
   Cáp Type-C 1.2 m Energizer C41C2AGBKT Đen ,  Energizer , 50, 175000,  Trung Quốc ,  captypecEnergizec41c2agbkt.jpg ,  Cáp sạc 
   Sạc không dây xe hơi 20W Xiaomi GDS4127GL Đen ,  XIAOMI , 50, 774000,  Trung Quốc ,  sacKhongDayXiaomiGds4127gl.jpg ,  Cáp sạc 
-  Miếng dán màn hình iPhone 13 Pro Max ,  iPhone , 50, 50000, ,  .jpg ,  Miếng dán màn hình 
-  Miếng dán kính iPhone 13 Pro Max JCPAL ,  iPhone , 50, 390000, ,  .jpg ,  Miếng dán màn hình 
-  Miếng dán full màn hình TA SHT31 Galaxy S21 Ultra ,  SAMSUNG , 50, 100000, ,  .jpg ,  Miếng dán màn hình 
-  Miếng dán màn hình Galaxy S21 ,  SAMSUNG , 50, 50000, ,  .jpg ,  Miếng dán màn hình 
+  Miếng dán màn hình iPhone 13 Pro Max ,  iPhone , 50, 50000, ,  none.jpg ,  Miếng dán màn hình 
+  Miếng dán kính iPhone 13 Pro Max JCPAL ,  iPhone , 50, 390000, ,  none.jpg ,  Miếng dán màn hình 
+  Miếng dán full màn hình TA SHT31 Galaxy S21 Ultra ,  SAMSUNG , 50, 100000, ,  none.jpg ,  Miếng dán màn hình 
+  Miếng dán màn hình Galaxy S21 ,  SAMSUNG , 50, 50000, ,  none.jpg ,  Miếng dán màn hình 
   Ốp lưng iPhone 13 Silicon OSMIA Cam , , 50, 70000, ,  oplungiphone13cam.jpg ,  Ốp lưng điện thoại 
   Ốp lưng iPhone 13 Pro Max Nhựa cứng viền dẻo Magnets KingxBar Trắng , , 50, 245000, ,  iphone13proMaxNhuaCung.jpg ,  Ốp lưng điện thoại 
   Ốp lưng Galaxy A71 nhựa dẻo Woven OSMIA Xanh Đậm , , 50, 49000, ,  oplunggalaxya71XanhDam.jpg ,  Ốp lưng điện thoại 
@@ -67,11 +67,11 @@
   Gậy Chụp Ảnh Bluetooth Cosano HD-P7 , , 50, 120000, ,  gayChupAnhCosanoP7.jpg ,  Gậy tự sướng 
   Gậy Chụp Ảnh Xmobile Hình Cô gái CSA005 , , 50, 72000, ,  gayChupAnhCoGaiHong.jpg ,  Gậy tự sướng 
   Gậy Chụp Ảnh Osmia OW5 , , 50, 70000, ,  gayChupAnhOw5.jpg ,  Gậy tự sướng 
-  Dây đeo điện thoại OSMIA silicon CRS , , 50, 24000, ,  .jpg ,  Đế móc điện thoại 
-  Bộ 2 móc điện thoại OSMIA CK-CRS10 Mèo cá heo xanh , , 50, 48000, ,  .jpg ,  Đế móc điện thoại 
-  Bộ 2 móc điện thoại OSMIA CK-CRS11 Hươu cánh cụt vàng , , 50, 48000, ,  .jpg ,  Đế móc điện thoại 
-  Bộ 2 móc điện thoại nhựa dẻo OSMIA CK-CRS3 Nai Mèo Đen , , 50, 32000, ,  .jpg ,  Đế móc điện thoại 
-  Túi chống nước Cosano JMG-C-20 Xanh lá , , 50, 40000, ,  .jpg ,  Túi chống nước 
-  Túi chống nước Cosano JMG-C-21 Xanh biển , , 50, 40000, ,  .jpg ,  Túi chống nước 
-  Túi chống nước Cosano 5 inch Vàng Chanh , , 50, 40000, ,  .jpg ,  Túi chống nước 
-  Túi chống nước 5 inch Cosano Hình Chú mèo , , 50, 40000, ,  .jpg ,  Túi chống nước 
+  Dây đeo điện thoại OSMIA silicon CRS , , 50, 24000, ,  dayDeoDienThoai.jpg ,  Đế móc điện thoại 
+  Bộ 2 móc điện thoại OSMIA CK-CRS10 Mèo cá heo xanh , , 50, 48000, ,  boMocKhoaCaHeo.jpg ,  Đế móc điện thoại 
+  Bộ 2 móc điện thoại OSMIA CK-CRS11 Hươu cánh cụt vàng , , 50, 48000, ,  boMocKhoaCanhCut.jpg ,  Đế móc điện thoại 
+  Bộ 2 móc điện thoại nhựa dẻo OSMIA CK-CRS3 Nai Mèo Đen , , 50, 32000, ,  boMocKhoaMeo.jpg ,  Đế móc điện thoại 
+  Túi chống nước Cosano JMG-C-20 Xanh lá , , 50, 40000, ,  tuiChongNuocCosanoXanhLa.jpg ,  Túi chống nước 
+  Túi chống nước Cosano JMG-C-21 Xanh biển , , 50, 40000, ,  tuiChongNuocCosanoXanhBien.jpg ,  Túi chống nước 
+  Túi chống nước Cosano 5 inch Vàng Chanh , , 50, 40000, ,  tuiChongNuocCosanoVangChanh.jpg ,  Túi chống nước 
+  Túi chống nước 5 inch Cosano Hình Chú mèo , , 50, 40000, ,  tuiChongNuocCosano.jpg ,  Túi chống nước 

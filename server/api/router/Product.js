@@ -18,6 +18,8 @@ router.get('/company', hangSP.getProductCompany);
 
 router.post('/buy', middleware.verifyAccount, hoaDon.setupBill);
 
+router.get('/getProduct_type/:tenLoaiSP', product.getProduct_type);
+
 // router.post('')
 
 module.exports = router;

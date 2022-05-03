@@ -1,4 +1,4 @@
-package com.example.qlybanhangonline;
+package com.example.qlybanhangonline.obj;
 
 public class CauHinh {
     private String ten, moTa;

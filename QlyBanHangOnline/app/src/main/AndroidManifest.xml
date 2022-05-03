@@ -12,11 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QlyBanHangOnline">
         <activity
+            android:name=".Draw"
+            android:exported="true"
+            android:label="Trang chủ"
+            android:theme="@style/Theme.QlyBanHangOnline.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".DangKy"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.QlyBanHangOnline.NoActionBar" />
         <activity
             android:name=".DangNhap"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.QlyBanHangOnline.NoActionBar"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gioHang"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"
+            android:title="@string/menu_gioHang" />
+        <item
+            android:id="@+id/nav_hoaDon"
+            android:icon="@drawable/ic_baseline_receipt_long_24"
+            android:title="@string/menu_donHang" />
+    </group>
+    <group
+        android:id="@+id/grLogout">
+        <item
+            android:id="@+id/nav_lienHe"
+            android:icon="@drawable/ic_baseline_phone_24"
+            android:title="@string/menu_lienHe"/>
+        <item
+            android:id="@+id/nav_exit"
+            android:title="Đăng xuất"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            />
+    </group>
+</menu>
