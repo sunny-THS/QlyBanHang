@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -19,7 +20,8 @@ public class DangKy extends AppCompatActivity implements View.OnClickListener {
     ImageButton btnDatePicker;
     EditText txtDate;
     RadioGroup btnRdio;
-    @Override
+    EditText txtTenDangNhap, txtEmail, txtMK, txtSoDT;
+    Button btnDangKy;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dang_ky);
@@ -33,6 +35,58 @@ public class DangKy extends AppCompatActivity implements View.OnClickListener {
         btnDatePicker = findViewById(R.id.btn_date);
         txtDate = findViewById(R.id.in_date);
         btnRdio = findViewById(R.id.btnGender);
+        txtTenDangNhap = findViewById(R.id.username);
+        txtEmail = findViewById(R.id.email);
+        txtMK = findViewById(R.id.password);
+        txtSoDT = findViewById(R.id.phoned);
+        btnDangKy = findViewById(R.id.signupbtn);
+        btnDangKy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(txtTenDangNhap.getText().toString().trim().equalsIgnoreCase("")) {
+                    txtTenDangNhap.setError("Vui lòng nhập tên đăng nhập !");
+                    txtTenDangNhap.requestFocus();
+                    return;
+                }
+                if(txtEmail.getText().toString().trim().equalsIgnoreCase("")) {
+                    txtEmail.setError("Vui lòng nhập email !");
+                    txtEmail.requestFocus();
+                    return;
+                }
+                //Kiểm tra định dạng email
+                if(!Validate.check_Email(txtEmail.getText().toString()))
+                {
+                    txtEmail.setError("Vui lòng nhập email chính xác !");
+                    txtEmail.requestFocus();
+                    return;
+                }
+
+                if(txtMK.getText().toString().trim().equalsIgnoreCase("")) {
+                    txtMK.setError("Vui lòng nhập mật khẩu !");
+                    txtMK.requestFocus();
+                    return;
+                }
+                if(txtSoDT.getText().toString().trim().equalsIgnoreCase("")) {
+                    txtSoDT.setError("Vui lòng nhập số điện thoại !");
+                    txtSoDT.requestFocus();
+                    return;
+                }
+                //Kiểm tra định dạng sdt
+                if(!Validate.check_SoDT(txtSoDT.getText().toString()))
+                {
+                    txtSoDT.setError("Vui lòng nhập số điện thoại chính xác !");
+                    txtSoDT.requestFocus();
+                    return;
+                }
+
+                if(txtDate.getText().toString().trim().equalsIgnoreCase("")) {
+                    txtDate.setError("Vui lòng chọn ngày sinh !");
+                    txtDate.requestFocus();
+                    return;
+                }
+                Toast.makeText(DangKy.this,"Đăng kí",Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     @Override
@@ -48,7 +102,7 @@ public class DangKy extends AppCompatActivity implements View.OnClickListener {
                         new DatePickerDialog.OnDateSetListener() {
                             @Override
                             public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
-                                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd//MM/yyy");
+                                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyy");
                                 Calendar chooseDate = Calendar.getInstance();
                                 chooseDate.set(i,i1,i2);
                                 String trDate = simpleDateFormat.format(chooseDate.getTime());
