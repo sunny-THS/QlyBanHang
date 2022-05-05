@@ -7,15 +7,12 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
-import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.qlybanhangonline.database.tbTaiKhoan;
 import com.example.qlybanhangonline.fragment.frgApp.SanPhamFragment;
 import com.example.qlybanhangonline.fragment.frgMenu.*;
 import com.example.qlybanhangonline.obj.TaiKhoan;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.annotation.NonNull;
@@ -69,6 +66,10 @@ public class Draw extends AppCompatActivity {
                     case R.id.nav_home: {
                         if (currentFragment != R.id.nav_home)
                             replaceFragment(new HomeFragment());
+                    }break;
+                    case R.id.nav_lienHe: {
+                        if (currentFragment != R.id.nav_lienHe)
+                            replaceFragment(new LienHeFragment());
                     }break;
                 }
                 binding.appBarDraw.toolbar.setTitle(item.getTitle());

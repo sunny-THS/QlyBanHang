@@ -18,6 +18,7 @@
             android:title="@string/menu_donHang" />
     </group>
     <group
+        android:checkableBehavior="single"
         android:id="@+id/grLogout">
         <item
             android:id="@+id/nav_lienHe"

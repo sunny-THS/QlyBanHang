@@ -7,13 +7,20 @@
     tools:context=".DangKy"
     android:background="@drawable/background"
     >
-
+    <ImageButton
+        android:id="@+id/btnQuayLai"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:textColor="@color/white"
+        />
     <EditText
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/view"
         android:drawableLeft="@drawable/ic_baseline_person_24"
@@ -90,12 +97,11 @@
         <EditText
             android:id="@+id/in_date"
             android:layout_width="0dp"
-            android:layout_weight="4"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
+            android:layout_weight="7"
             android:backgroundTint="#5909E8"
+            android:layout_marginStart="10dp"
             android:drawableLeft="@drawable/ic_baseline_cake_24"
             android:drawablePadding="20dp"
             android:hint="Ngày Sinh"

@@ -3,6 +3,7 @@ package com.example.qlybanhangonline;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,6 +23,8 @@ public class DangKy extends AppCompatActivity implements View.OnClickListener {
     RadioGroup btnRdio;
     EditText txtTenDangNhap, txtEmail, txtMK, txtSoDT;
     Button btnDangKy;
+    ImageButton btnExit;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dang_ky);
@@ -40,6 +43,15 @@ public class DangKy extends AppCompatActivity implements View.OnClickListener {
         txtMK = findViewById(R.id.password);
         txtSoDT = findViewById(R.id.phoned);
         btnDangKy = findViewById(R.id.signupbtn);
+        btnExit = findViewById(R.id.btnQuayLai);
+
+        btnExit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(DangKy.this, DangNhap.class));
+            }
+        });
+
         btnDangKy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -84,6 +96,13 @@ public class DangKy extends AppCompatActivity implements View.OnClickListener {
                     txtDate.requestFocus();
                     return;
                 }
+                //Kiểm tra định dạng ngày
+                if(!Validate.check_Ngay(txtDate.getText().toString()))
+                {
+                    txtDate.setError("Ngày sinh sai định dạng");
+                    txtDate.requestFocus();
+                    return;
+                }
                 Toast.makeText(DangKy.this,"Đăng kí",Toast.LENGTH_LONG).show();
             }
         });
@@ -107,6 +126,7 @@ public class DangKy extends AppCompatActivity implements View.OnClickListener {
                                 chooseDate.set(i,i1,i2);
                                 String trDate = simpleDateFormat.format(chooseDate.getTime());
                                 txtDate.setText(trDate);
+                                txtDate.setError(null);
                             }
                         }, Year, Month, Day
 

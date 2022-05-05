@@ -34,7 +34,7 @@ public class ViewPagerAdapter_PhuKien  extends FragmentStatePagerAdapter {
             case 5: // Đế móc điện thoại
                 title = "Đế móc điện thoại"; break;
             case 6: // Túi chống nướ
-                title = "Túi chống nướ"; break;
+                title = "Túi chống nước"; break;
             default: title = "Pin sạc dự phòng"; break;
         }
         return title;
@@ -58,7 +58,7 @@ public class ViewPagerAdapter_PhuKien  extends FragmentStatePagerAdapter {
             case 5: // Đế móc điện thoại
                 loaiSP = CUSTOM_PATH_PT + "Đế móc điện thoại"; break;
             case 6: // Túi chống nướ
-                loaiSP = CUSTOM_PATH_PT + "Túi chống nướ"; break;
+                loaiSP = CUSTOM_PATH_PT + "Túi chống nước"; break;
             default: loaiSP = CUSTOM_PATH_PT + "Pin sạc dự phòng"; break;
         }
         return loaiSP == null ? null : new SanPhamFragment(loaiSP);
