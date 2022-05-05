@@ -3,10 +3,13 @@ package com.example.qlybanhangonline;
 import static com.example.qlybanhangonline.Constants.CUSTOM_PATH_PN;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.qlybanhangonline.database.tbTaiKhoan;
@@ -35,7 +38,8 @@ public class Draw extends AppCompatActivity {
     private int currentFragment;
     private SearchView searchView;
     private RoundedImageView img;
-
+    TextView txtLienHe;
+    Button btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,11 +56,9 @@ public class Draw extends AppCompatActivity {
 //                        .setAction("Action", null).show();
 //            }
 //        });
-
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, binding.appBarDraw.toolbar, R.string.nav_open, R.string.nav_close);
-
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -157,6 +159,7 @@ public class Draw extends AppCompatActivity {
                 return false;
             }
         });
+
 
         return true;
     }

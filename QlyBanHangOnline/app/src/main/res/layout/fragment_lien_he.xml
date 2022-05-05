@@ -1,14 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.frgMenu.LienHeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <ImageView
+        android:id="@+id/imgCSKH"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/cskh"
+        android:layout_centerHorizontal="true"/>
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/lb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgCSKH"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Mọi thắc măc vui lòng liên hệ"
+        android:textColor="#03A9F4"
+        android:textSize="12pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtSDTLH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:autoLink="phone"
+        android:text="Hotline: 0938608654"
+        android:textColor="#BFC0C2"
+        android:textColorLink="#03A9F4"
+        android:textSize="13pt" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSDTLH"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:autoLink="phone"
+        android:text="hoặc"
+        android:textColor="#BFC0C2"
+        android:textSize="9pt" />
+
+    <TextView
+        android:id="@+id/txtEmailLH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:autoLink="email"
+        android:text="Email: example@gmail.com"
+        android:textColor="#BFC0C2"
+        android:textColorLink="#03A9F4"
+        android:textSize="13pt" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Quay lại" />
+</RelativeLayout>
