@@ -38,8 +38,7 @@ public class Draw extends AppCompatActivity {
     private int currentFragment;
     private SearchView searchView;
     private RoundedImageView img;
-    TextView txtLienHe;
-    Button btn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
