@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ad/Desktop/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/color_cskh.xml" value="0.234" />
         <entry key="..\:/Users/ad/Desktop/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/divider.xml" value="0.181" />
+        <entry key="..\:/Users/ad/Desktop/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_email.xml" value="0.1645" />
+        <entry key="..\:/Users/ad/Desktop/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.1645" />
         <entry key="..\:/Users/ad/Desktop/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_phone.xml" value="0.182" />
+        <entry key="..\:/Users/ad/Desktop/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/side_nav_bar.xml" value="0.234" />
         <entry key="..\:/Users/ad/Desktop/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/view.xml" value="0.181" />
         <entry key="..\:/Users/ad/Desktop/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/activity_dang_ky.xml" value="0.1431159420289855" />
         <entry key="..\:/Users/ad/Desktop/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/activity_dang_nhap.xml" value="0.1431159420289855" />
