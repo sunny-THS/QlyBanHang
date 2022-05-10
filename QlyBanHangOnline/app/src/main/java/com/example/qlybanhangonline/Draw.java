@@ -12,10 +12,15 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.qlybanhangonline.database.DbHelper;
+import com.example.qlybanhangonline.database.tbGioHang;
 import com.example.qlybanhangonline.database.tbTaiKhoan;
+import com.example.qlybanhangonline.database.tbThongTinTK;
 import com.example.qlybanhangonline.fragment.frgApp.SanPhamFragment;
 import com.example.qlybanhangonline.fragment.frgMenu.*;
 import com.example.qlybanhangonline.obj.TaiKhoan;
+import com.example.qlybanhangonline.obj.ThongTinTK;
+import com.example.qlybanhangonline.obj.XuLy;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.annotation.NonNull;
@@ -30,18 +35,20 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.qlybanhangonline.databinding.ActivityDrawBinding;
 import com.makeramen.roundedimageview.RoundedImageView;
 
-import java.util.ArrayList;
-
-public class Draw extends AppCompatActivity {
+public class Draw extends AppCompatActivity implements XuLy {
 
     private ActivityDrawBinding binding;
     private int currentFragment;
     private SearchView searchView;
     private RoundedImageView img;
+    private TextView lbName;
+    private DbHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        dbHelper = new DbHelper(Draw.this);
 
         binding = ActivityDrawBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -72,6 +79,25 @@ public class Draw extends AppCompatActivity {
                         if (currentFragment != R.id.nav_lienHe)
                             replaceFragment(new LienHeFragment());
                     }break;
+                    case R.id.nav_gioHang: {
+                        tbGioHang gioHang = new tbGioHang(Draw.this);
+                        if (gioHang.getGH().size() == 0)
+                        {
+                            replaceFragment(new GioHangRongFragment());
+                        }else if (currentFragment != R.id.nav_gioHang)
+                            replaceFragment(new GioHangFragment());
+                    }break;
+                    case R.id.nav_hoaDon: {
+                        if (currentFragment != R.id.nav_hoaDon)
+                            replaceFragment(new DonHangFragment());
+                    }break;
+                    case R.id.nav_exit: {
+                        // onUpgrade db
+                        dbHelper.onUpgrade(null, 0, 0);
+
+                        finish();
+                        startActivity(getIntent());
+                    }break;
                 }
                 binding.appBarDraw.toolbar.setTitle(item.getTitle());
                 binding.drawerLayout.closeDrawer(GravityCompat.START); // hiệu ứng đóng
@@ -79,12 +105,12 @@ public class Draw extends AppCompatActivity {
                 return true;
             }
         });
-        currentFragment = R.id.nav_home;
-        replaceFragment(new HomeFragment());
 
         // tài khoản người dùng
         View nav_header = navigationView.getHeaderView(0);
         img = nav_header.findViewById(R.id.imageViewNguoiDung);
+        lbName = nav_header.findViewById(R.id.txtTenNguoiDung);
+
         img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -93,17 +119,37 @@ public class Draw extends AppCompatActivity {
                 if (tk == null) {
                     Intent intent = new Intent(Draw.this, DangNhap.class);
                     startActivity(intent);
-
                 }
             }
         });
 
         MenuItem item_exit = navigationView.getMenu().findItem(R.id.nav_exit);
         tbTaiKhoan taiKhoan = new tbTaiKhoan(Draw.this);
+
+        tbThongTinTK thongTinTK = new tbThongTinTK(Draw.this);
+        ThongTinTK tttk = thongTinTK.getTTTK();
+
         TaiKhoan tk = taiKhoan.getTK();
         if (tk == null) {
             item_exit.setVisible(false);
-        }else item_exit.setVisible(true);
+        }else {
+            item_exit.setVisible(true);
+            lbName.setText(tttk.getTen());
+            img.setImageResource(tttk.getGioiTinh().equals("nam") ? R.drawable.boy : R.drawable.female);
+        }
+
+        // bắt intent giỏ hàng
+        Intent intent = getIntent();
+        boolean ckGioHang = intent.getBooleanExtra("messageIntentGioHang", false);
+        if (!ckGioHang) {
+            currentFragment = R.id.nav_home;
+            replaceFragment(new HomeFragment());
+
+        }else {
+            currentFragment = R.id.nav_gioHang;
+            replaceFragment(new GioHangFragment());
+            binding.appBarDraw.toolbar.setTitle("Giỏ hàng");
+        }
     }
 
     @Override
@@ -140,6 +186,8 @@ public class Draw extends AppCompatActivity {
             @Override
             public boolean onMenuItemActionCollapse(MenuItem menuItem) {
                 replaceFragment(new HomeFragment());
+                binding.appBarDraw.toolbar.setTitle("Trang chủ");
+                currentFragment = R.id.nav_home; // gán cờ
                 return true;
             }
         });
@@ -163,4 +211,9 @@ public class Draw extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public void capNhatTongTien() {
+        GioHangFragment gioHangFragment = (GioHangFragment) getSupportFragmentManager().findFragmentById(R.id.FrameData);
+        gioHangFragment.capNhatTongTien();
+    }
 }

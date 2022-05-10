@@ -15,6 +15,13 @@ public class TaiKhoan implements Serializable {
         this.image = image;
     }
 
+    public TaiKhoan(String id, String username) {
+        this.id = id;
+        this.username = username;
+        this.password = null;
+        this.image = null;
+    }
+
     public TaiKhoan() {
     }
 

@@ -24,7 +24,7 @@ const hoaDon = {
         // output: bill
 
         const chiTietDH = req.body.chiTietDonHang;
-        const donGiaHD = chiTietDH.map(item => item.gia);
+        const donGiaHD = chiTietDH.map(item => item.gia * item.soLuong);
         
         // cập nhât & check số lượng
         for (const it of chiTietDH) {
@@ -49,7 +49,6 @@ const hoaDon = {
         res.json(req.body);
         
     }
-
 }
 
 module.exports = hoaDon;

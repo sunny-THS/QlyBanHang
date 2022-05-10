@@ -10,7 +10,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.QlyBanHangOnline">
+        android:theme="@style/Theme.QlyBanHangOnline"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ThongTinDatHang"
+            android:exported="false"
+            android:theme="@style/Theme.QlyBanHangOnline.NoActionBar" />
+        <activity
+            android:name=".ThongTinSanPham"
+            android:exported="false"
+            android:theme="@style/Theme.QlyBanHangOnline.NoActionBar" />
         <activity
             android:name=".Draw"
             android:exported="true"
@@ -29,7 +38,7 @@
         <activity
             android:name=".DangNhap"
             android:exported="false"
-            android:theme="@style/Theme.QlyBanHangOnline.NoActionBar"/>
+            android:theme="@style/Theme.QlyBanHangOnline.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

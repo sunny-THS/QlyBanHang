@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_editor_absoluteX="0dp"
+    app:layout_editor_absoluteY="0dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ThongTinSanPham"
+        >
+        <ImageButton
+            android:id="@+id/btnQuayLai"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:src="@drawable/ic_baseline_arrow_back_24_b"
+            android:textColor="@color/white"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnQuayLai"
+            android:layout_marginTop="10dp"
+            android:id="@+id/viewThongTinChiTiet">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:id="@+id/imgSP"/>
+            <TextView
+                android:id="@+id/txtTenSP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_toRightOf="@id/imgSP"
+                android:textSize="10pt"
+                android:textColor="#3C06FF"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/txtGia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_toRightOf="@id/imgSP"
+                android:layout_below="@+id/txtTenSP"
+                android:textSize="8pt"
+                android:textColor="#FF061B"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/txtHang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_toRightOf="@id/imgSP"
+                android:layout_below="@+id/txtGia"
+                android:textSize="8pt"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/viewCauHinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewThongTinChiTiet"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/lbCH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Cấu hình:"
+                android:textColor="#000"
+                android:textSize="10pt" />
+
+            <FrameLayout
+                android:id="@+id/cauHinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbCH"
+                android:layout_marginTop="5dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/viewBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewCauHinh"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="25dp">
+
+            <Button
+                android:id="@+id/btnGioHang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_color"
+                android:text="Thêm vào giỏ hàng"
+                android:textAllCaps="false"
+                android:textColor="@drawable/button_text_color"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnMua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_color_s"
+                android:text="Mua"
+                android:textAllCaps="false"
+                android:textColor="@drawable/button_text_color_s"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

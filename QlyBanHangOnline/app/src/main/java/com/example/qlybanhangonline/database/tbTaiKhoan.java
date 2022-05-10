@@ -43,6 +43,7 @@ public class tbTaiKhoan extends DbHelper {
         contentValues.put("id", tk.getId());
         contentValues.put("username", tk.getUsername());
         contentValues.put("password", tk.getPassword());
+        contentValues.put("image", tk.getImage());
 
         boolean kq = db.insert("tbTaiKhoan", null, contentValues) > 0;
         db.close();

@@ -14,6 +14,21 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.VolleyLog;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+import com.example.qlybanhangonline.database.tbTaiKhoan;
+import com.example.qlybanhangonline.database.tbThongTinTK;
+import com.example.qlybanhangonline.obj.TaiKhoan;
+import com.example.qlybanhangonline.obj.ThongTinTK;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.UnsupportedEncodingException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
@@ -21,7 +36,7 @@ public class DangKy extends AppCompatActivity implements View.OnClickListener {
     ImageButton btnDatePicker;
     EditText txtDate;
     RadioGroup btnRdio;
-    EditText txtTenDangNhap, txtEmail, txtMK, txtSoDT;
+    EditText txtTenDangNhap, txtEmail, txtMK, txtSoDT, txtHoTen;
     Button btnDangKy;
     ImageButton btnExit;
 
@@ -38,6 +53,7 @@ public class DangKy extends AppCompatActivity implements View.OnClickListener {
         btnDatePicker = findViewById(R.id.btn_date);
         txtDate = findViewById(R.id.in_date);
         btnRdio = findViewById(R.id.btnGender);
+        txtHoTen = findViewById(R.id.hoTen);
         txtTenDangNhap = findViewById(R.id.username);
         txtEmail = findViewById(R.id.email);
         txtMK = findViewById(R.id.password);
@@ -55,6 +71,11 @@ public class DangKy extends AppCompatActivity implements View.OnClickListener {
         btnDangKy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(txtHoTen.getText().toString().trim().equalsIgnoreCase("")) {
+                    txtHoTen.setError("Vui lòng nhập họ tên!");
+                    txtHoTen.requestFocus();
+                    return;
+                }
                 if(txtTenDangNhap.getText().toString().trim().equalsIgnoreCase("")) {
                     txtTenDangNhap.setError("Vui lòng nhập tên đăng nhập !");
                     txtTenDangNhap.requestFocus();
@@ -103,7 +124,16 @@ public class DangKy extends AppCompatActivity implements View.OnClickListener {
                     txtDate.requestFocus();
                     return;
                 }
-                Toast.makeText(DangKy.this,"Đăng kí",Toast.LENGTH_LONG).show();
+                ThongTinTK thongTinTK = new ThongTinTK();
+                thongTinTK.setUsername(txtTenDangNhap.getText().toString().trim());
+                thongTinTK.setPassword(txtMK.getText().toString().trim());
+                thongTinTK.setTen(txtHoTen.getText().toString().trim());
+                thongTinTK.setSdt(txtSoDT.getText().toString().trim());
+                thongTinTK.setGioiTinh(((RadioButton)btnRdio.getChildAt(0)).isChecked() ? "nam" : "nữ");
+                thongTinTK.setNgaySinh(txtDate.getText().toString().trim());
+                thongTinTK.setEmail(txtEmail.getText().toString().trim());
+
+                dangKy(thongTinTK);
             }
         });
     }
@@ -134,6 +164,70 @@ public class DangKy extends AppCompatActivity implements View.OnClickListener {
                 datePickerDialog.show();
                 break;
         }
+    }
 
+    private void dangKy(ThongTinTK thongTinTK) {
+        try {
+            RequestQueue requestQueue = Volley.newRequestQueue(this);
+            String URL = this.getString(R.string.url) + "/auth/register";
+
+            JSONObject jsonBody = new JSONObject();
+            jsonBody.put("username", thongTinTK.getUsername());
+            jsonBody.put("pw", thongTinTK.getPassword());
+            jsonBody.put("name", thongTinTK.getTen());
+            jsonBody.put("email", thongTinTK.getEmail());
+            jsonBody.put("birdthDay", thongTinTK.getNgaySinh());
+            jsonBody.put("sex", thongTinTK.getGioiTinh().equals("nam"));
+            jsonBody.put("phoneNumbers", thongTinTK.getSdt());
+
+            final String requestBody = String.format("{\"user\":%s}",jsonBody.toString());
+
+            StringRequest stringRequest = new StringRequest(Request.Method.POST, URL,
+                    res -> {
+                        try {
+                            JSONObject jsonObject = new JSONObject(res);
+                            Toast.makeText(this, res, Toast.LENGTH_SHORT).show();
+
+                            // lưu thành công
+                            finish();
+                            startActivity(new Intent(DangKy.this, DangNhap.class));
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    },
+                    volleyErr -> {
+                        if (volleyErr == null || volleyErr.networkResponse == null) {
+                            return;
+                        }
+
+                        try {
+                            String message = new String(volleyErr.networkResponse.data,"UTF-8");
+
+                            Toast.makeText(DangKy.this, message, Toast.LENGTH_SHORT).show();
+
+                        } catch (UnsupportedEncodingException e) {
+                            e.printStackTrace();
+                        }
+                    }) {
+                @Override
+                public String getBodyContentType() {
+                    return "application/json; charset=utf-8";
+                }
+
+                @Override
+                public byte[] getBody() throws AuthFailureError {
+                    try {
+                        return requestBody == null ? null : requestBody.getBytes("utf-8");
+                    } catch (UnsupportedEncodingException uee) {
+                        VolleyLog.wtf("Unsupported Encoding while trying to get the bytes of %s using %s", requestBody, "utf-8");
+                        return null;
+                    }
+                }
+            };
+
+            requestQueue.add(stringRequest);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 }

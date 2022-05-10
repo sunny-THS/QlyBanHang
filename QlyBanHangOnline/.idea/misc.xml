@@ -22,39 +22,72 @@
         <entry key="..\:/Users/ad/Desktop/QlyBanHang/QlyBanHangOnline/app/src/main/res/menu/draw.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/ad/Desktop/QlyBanHang/QlyBanHangOnline/app/src/main/res/menu/menu_bottom_nav.xml" value="0.25052083333333336" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1095" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/boder_button.xml" value="0.1165" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/boder_button_fill.xml" value="0.1" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/button_color.xml" value="0.1" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/button_color_s.xml" value="0.1" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/button_text_color.xml" value="0.1" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/button_text_color_s.xml" value="0.1" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/color_cskh.xml" value="0.1165" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/divider.xml" value="0.1" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" value="0.1165" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_add_tang.xml" value="0.1405" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_arrow_back_24_b.xml" value="0.1165" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_arrow_forward_24.xml" value="0.1925" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_cake_24.xml" value="0.163" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_calendar_today_24.xml" value="0.163" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_email.xml" value="0.1165" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.1095" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_exit_to_app_24.xml" value="0.1165" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1095" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.2085" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.163" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_phone.xml" value="0.1165" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_phone_24.xml" value="0.1095" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_pregnant_woman_24.xml" value="0.1095" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_receipt_long_24.xml" value="0.1165" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" value="0.1165" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_smartphone_24.xml" value="0.1165" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_toys.xml" value="0.1165" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_baseline_vpn_key_24.xml" value="0.1095" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1095" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_menu_camera.xml" value="0.1" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.1" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.1" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/ic_search.xml" value="0.1165" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/side_nav_bar.xml" value="0.1" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/view.xml" value="0.163" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/drawable/view_search_location.xml" value="0.2085" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/activity_dang_ky.xml" value="0.2" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/activity_dang_nhap.xml" value="0.25416666666666665" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/activity_draw.xml" value="0.22871376811594202" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/activity_layout_sp.xml" value="0.1" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/activity_thong_tin_dat_hang.xml" value="0.2" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/activity_thong_tin_san_pham.xml" value="0.2" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/app_bar_draw.xml" value="0.10121457489878542" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/content_draw.xml" value="0.1" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/fragment_cau_hinh.xml" value="0.25416666666666665" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/fragment_cau_hinh_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/fragment_don_hang.xml" value="0.12360688956433637" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/fragment_gallery.xml" value="0.22871376811594202" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/fragment_gio_hang.xml" value="0.1660377358490566" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/fragment_gio_hang_rong.xml" value="0.176" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/fragment_hoa_don.xml" value="0.25416666666666665" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/fragment_hoa_don_list.xml" value="0.12360688956433637" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/fragment_home.xml" value="0.11302083333333333" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/fragment_lien_he.xml" value="0.23854166666666668" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/fragment_san_pham.xml" value="0.1640625" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/fragment_san_pham_list.xml" value="0.2" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/fragment_slideshow.xml" value="0.1" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/fragment_sp_gio.xml" value="0.264" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/fragment_sp_gio_list.xml" value="0.2441123188405797" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/layout/nav_header_draw.xml" value="0.264" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/menu/activity_main_drawer.xml" value="0.2375" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/menu/draw.xml" value="0.2375" />
         <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/menu/menu_bottom_nav.xml" value="0.25416666666666665" />
+        <entry key="..\:/github/QlyBanHang/QlyBanHangOnline/app/src/main/res/xml/network_security_config.xml" value="0.2441123188405797" />
       </map>
     </option>
   </component>

@@ -1,6 +1,8 @@
 package com.example.qlybanhangonline.obj;
 
-public class CauHinh {
+import java.io.Serializable;
+
+public class CauHinh implements Serializable {
     private String ten, moTa;
 
     public CauHinh() {

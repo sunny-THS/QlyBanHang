@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const img = {
     getImage: (req, res) => {
-        console.log(req.params.fileName);
+        // console.log(req.params.fileName);
 
         fs.readFile(`./Image/${req.params.fileName}`, (err, data) => {
             if (err) {

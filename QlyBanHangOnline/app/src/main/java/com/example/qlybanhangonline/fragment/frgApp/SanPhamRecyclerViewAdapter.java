@@ -3,12 +3,16 @@ package com.example.qlybanhangonline.fragment.frgApp;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.example.qlybanhangonline.ThongTinSanPham;
 import com.example.qlybanhangonline.databinding.FragmentSanPhamBinding;
 import com.example.qlybanhangonline.obj.CauHinh;
 import com.example.qlybanhangonline.obj.SanPham;
@@ -64,6 +68,16 @@ public class SanPhamRecyclerViewAdapter extends RecyclerView.Adapter<SanPhamRecy
         Locale localeVN = new Locale("vi", "VN");
         NumberFormat vn = NumberFormat.getInstance(localeVN);
         holder.mGia.setText(vn.format(sanPham.getGia()) + " VNĐ");
+
+        // xử click item
+        holder.mView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), ThongTinSanPham.class);
+                intent.putExtra("ThongTinChiTiet", sanPham);
+                view.getContext().startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -75,10 +89,12 @@ public class SanPhamRecyclerViewAdapter extends RecyclerView.Adapter<SanPhamRecy
 
         private TextView mTenSP, mMoTa, mGia;
         private ImageView mImgSP;
+        private View mView;
 
         public ViewHolder(FragmentSanPhamBinding binding) {
             super(binding.getRoot());
 
+            this.mView = binding.getRoot();
             this.mTenSP = binding.itemName;
             this.mImgSP = binding.imgSP;
             this.mMoTa = binding.itemMoTa;

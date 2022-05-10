@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imgCSKH"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="15dp"
             android:gravity="center"
             android:text="CHĂM SÓC KHÁCH HÀNG"
             android:textColor="#FFFFFF"
@@ -55,7 +55,7 @@
         android:autoLink="phone"
         android:drawableLeft="@drawable/ic_baseline_smartphone_24"
         android:paddingLeft="8dp"
-        android:text="Hotline: 0938608654"
+        android:text=" Hotline: 0938608654"
         android:textColor="#9B9C9F"
         android:textColorLink="#03A9F4"
         android:textSize="10pt"
@@ -70,18 +70,10 @@
         android:autoLink="email"
         android:drawableLeft="@drawable/ic_baseline_email"
         android:paddingLeft="8dp"
-        android:text="Email: example@gmail.com"
+        android:text=" Email: example@gmail.com"
         android:textColor="#9B9C9F"
         android:textColorLink="#03A9F4"
         android:textSize="10pt"
         android:textStyle="italic" />
 
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
-        android:backgroundTint="#03A9F4"
-        android:text="Quay lại" />
 </RelativeLayout>

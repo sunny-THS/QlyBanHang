@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThongTinDatHang">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Người nhận:"
+        android:textSize="10pt"
+        android:textColor="#000"
+        android:id="@+id/lbTen"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTenNguoiNhan"
+        android:text="Nguyễn Văn Tèo"
+        android:textSize="10pt"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/lbTen"/>
+
+    <EditText
+        android:id="@+id/diaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbTen"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/view_search_location"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+        android:drawablePadding="20dp"
+        android:hint="Địa chỉ giao hàng"
+        android:padding="20dp"
+        android:textColor="#fff"
+        android:textColorHint="#000" />
+
+
+    <Button
+        android:id="@+id/btnQuayLai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#06f"
+        android:text="Quay lại"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/diaChi"
+        android:layout_toLeftOf="@id/btnXacNhan"/>
+
+    <Button
+        android:id="@+id/btnXacNhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="#FF8F07"
+        android:text="Xác nhận"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/diaChi"/>
+
+</RelativeLayout>

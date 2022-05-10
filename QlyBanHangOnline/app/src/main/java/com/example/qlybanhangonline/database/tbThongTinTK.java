@@ -29,7 +29,7 @@ public class tbThongTinTK extends DbHelper {
         contentValues.put("SDT", tttk.getSdt());
         contentValues.put("id_tk", tttk.getId());
 
-        boolean kq = db.insert("tbTaiKhoan", null, contentValues) > 0;
+        boolean kq = db.insert("tbThongTinTK", null, contentValues) > 0;
         db.close();
         return kq;
     }
@@ -56,24 +56,24 @@ public class tbThongTinTK extends DbHelper {
         db.close();
     }
 
-    public ArrayList<ThongTinTK> getTTTKs() {
+    public ThongTinTK getTTTK() {
         SQLiteDatabase db = getReadableDatabase();
-        ArrayList<ThongTinTK> tttks = new ArrayList<>();
+        ThongTinTK tttk = null;
 
         Cursor cursor = db.rawQuery("select * from tbThongTinTK", null);
 
-        while (cursor.moveToNext()) {
-            tttks.add(new ThongTinTK(
+        if (cursor.moveToNext()) {
+            tttk = new ThongTinTK(
                     cursor.getInt(0), // id
                     cursor.getString(1), // họ tên
                     cursor.getString(2), // email
                     cursor.getString(3), // ngày sinh
-                    cursor.getString(4), // giới tính
+                    cursor.getInt(4) == 1 ? "nam" : "nữ", // giới tính
                     cursor.getString(5), // sdt
                     cursor.getString(6) // id_tk
-            ));
+            );
         }
         db.close();
-        return tttks;
+        return tttk;
     }
 }

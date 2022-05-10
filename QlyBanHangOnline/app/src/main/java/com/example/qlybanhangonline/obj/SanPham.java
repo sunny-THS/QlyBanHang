@@ -8,7 +8,27 @@ import java.util.ArrayList;
 public class SanPham implements Serializable {
     String id, ten, nsx, hinhAnh, hangSP, loaiSP;
     int soLuong;
+
+    public int getSoLuongTon() {
+        return soLuongTon;
+    }
+
+    public void setSoLuongTon(int soLuongTon) {
+        this.soLuongTon = soLuongTon;
+    }
+
+    int soLuongTon;
     double gia;
+    int idgh;
+
+    public int getIdgh() {
+        return idgh;
+    }
+
+    public void setIdgh(int idgh) {
+        this.idgh = idgh;
+    }
+
     ArrayList<CauHinh> cauHinhs;
 
     public SanPham() {
