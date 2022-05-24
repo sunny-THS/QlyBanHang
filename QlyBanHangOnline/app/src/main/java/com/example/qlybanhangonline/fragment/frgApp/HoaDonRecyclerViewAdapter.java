@@ -2,11 +2,16 @@ package com.example.qlybanhangonline.fragment.frgApp;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.qlybanhangonline.ChiTietHoaDon;
+import com.example.qlybanhangonline.Draw;
 import com.example.qlybanhangonline.databinding.FragmentHoaDonBinding;
 import com.example.qlybanhangonline.obj.HoaDon;
 
@@ -36,14 +41,30 @@ public class HoaDonRecyclerViewAdapter extends RecyclerView.Adapter<HoaDonRecycl
     public void onBindViewHolder(final ViewHolder holder, int position) {
         HoaDon hd = mValues.get(position);
 
-        holder.mId.setText(hd.getId());
+        holder.mId.setText(String.format("Đơn hàng %d", position + 1));
 
         Locale localeVN = new Locale("vi", "VN");
         NumberFormat vn = NumberFormat.getInstance(localeVN);
         holder.mGia.setText(vn.format(hd.getDonGia()) + " VNĐ");
 
-
         holder.mNgay.setText(hd.getNgayLap());
+
+        holder.mTrangThai.setText(hd.getTrangThai());
+        switch (hd.getTrangThai()) {
+            case "Chưa xác nhận":
+                holder.mTrangThai.setBackgroundColor(Color.rgb(200,0,0)); break;
+            case "Đang giao hàng":
+                holder.mTrangThai.setBackgroundColor(Color.rgb(200,161,2)); break;
+            case "Hoàn thành":
+                holder.mTrangThai.setBackgroundColor(Color.rgb(2,200,91)); break;
+        }
+
+        holder.v.setOnClickListener(e -> {
+            Intent intent = new Intent(e.getContext(), ChiTietHoaDon.class);
+            intent.putExtra("idHD", hd.getId());
+            e.getContext().startActivity(intent);
+            Toast.makeText(e.getContext(), hd.getId(), Toast.LENGTH_SHORT).show();
+        });
     }
 
     @Override
@@ -55,6 +76,7 @@ public class HoaDonRecyclerViewAdapter extends RecyclerView.Adapter<HoaDonRecycl
         public final TextView mId;
         public final TextView mGia;
         public final TextView mNgay;
+        public final TextView mTrangThai;
         public final View v;
 
         public ViewHolder(FragmentHoaDonBinding binding) {
@@ -63,6 +85,7 @@ public class HoaDonRecyclerViewAdapter extends RecyclerView.Adapter<HoaDonRecycl
             mId = binding.itemId;
             mGia = binding.donGia;
             mNgay = binding.itemNgay;
+            mTrangThai = binding.itemTinhTrang;
             v = binding.getRoot();
         }
     }

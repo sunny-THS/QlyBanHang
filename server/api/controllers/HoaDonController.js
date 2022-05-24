@@ -10,11 +10,35 @@ const hoaDon = {
             .catch(err => res.json(err));
     },
     getBills_user: async (req, res) => {
-        await HoaDon.find({ tenKH: req.body.username })
+        await HoaDon.find({ tenKH: req.body.username }).sort({ createdAt: -1 })
             .then(data => {
-                res.json(data);
+                data = data.map(hd => {
+                    return {
+                        _id:hd._id,
+                        donGia:hd.donGia,
+                        ngayLap:hoaDon.formatDate(hd.createdAt),
+                        TrangThai: hd.TrangThai
+                    };
+                })
+                res.json(data); // chỉnh thông tin
             })
             .catch(err => res.json(err));
+    },
+    getBill_id: async (req, res) => {
+        await HoaDon.find({ _id: req.params.id })
+        .then(data => {
+            data = data.map(hd => {
+                return {
+                    _id:hd._id,
+                    donGia:hd.donGia,
+                    ngayLap:hoaDon.formatDate(hd.createdAt),
+                    TrangThai: hd.TrangThai,
+                    chiTietDonHang: hd.chiTietDonHang
+                };
+            })
+            res.json(data);
+        })
+        .catch(err => res.json(err));
     },
     setupBill: async (req, res) => {
         // method: post
@@ -39,15 +63,33 @@ const hoaDon = {
             donGia: donGiaHD.reduce((partialSum, a) => partialSum + a, 0),
             tenKH: req.body.tenKH,
             diaChi: req.body.diaChi,
-            chiTietDonHang: chiTietDH
+            chiTietDonHang: chiTietDH,
+            TrangThai: "Chưa xác nhận"
         });
         
         // save to mongodb
         await newHD.save();
 
-
         res.json(req.body);
-        
+    },
+    xacNhanHD: async (req, res) => {
+        const filter = { _id: req.body.id }
+        const update = { TrangThai: req.body.trangThai == null ? "Đang giao hàng" : "Hoàn thành" };
+        await HoaDon.findOneAndUpdate(filter, update, {
+            new: true
+        });
+
+        res.send("Đơn hàng xác nhận thành công")
+    },
+    padTo2Digits: (num) => {
+        return num.toString().padStart(2, '0');
+    },
+    formatDate: (date) => {
+        return [
+            hoaDon.padTo2Digits(date.getDate()),
+            hoaDon.padTo2Digits(date.getMonth() + 1),
+            date.getFullYear(),
+        ].join('/');
     }
 }
 

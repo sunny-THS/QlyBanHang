@@ -63,6 +63,7 @@ public class tbTaiKhoan extends DbHelper {
 
         contentValues.put("username", tk.getUsername());
         contentValues.put("password", tk.getPassword());
+        contentValues.put("image", tk.getImage());
 
         String[] _id = {String.valueOf(tk.getId())};
         db.update("tbTaiKhoan", contentValues,"id=?", _id);

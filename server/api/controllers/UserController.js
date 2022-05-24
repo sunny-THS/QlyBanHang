@@ -1,5 +1,7 @@
 const User = require('../models/Users');
 const bcrypt = require('bcryptjs'); // hash pw
+const mailer = require('nodemailer');
+
 
 // name: String,
 // email: String,
@@ -25,7 +27,7 @@ const authentication = {
             // check exists of user
             await User.findOne({ "account.username": req.body.user.username })
                 .then( async (user) => {
-                    console.log(user);
+                    // console.log(user);
                     if (user)
                         return res.status(401).send(MESSAGE_USER_EXISTS);
                     
@@ -34,7 +36,8 @@ const authentication = {
                     const newUser = await new User({
                         account: {
                             username: req.body.user.username,
-                            password: hashed
+                            password: hashed,
+                            image: 'macDinh.png'
                         },
                         name: req.body.user.name,
                         email: req.body.user.email,
@@ -67,8 +70,88 @@ const authentication = {
 
             const {account, birdthDay, ...other} = user._doc;
             // res.json({ ...other, accessToken });
-            res.json({...other, username:account.username, birdthDay:authentication.formatDate(birdthDay) }); // return infomation user
+            res.json({...other, image: authentication.HandleHinhAnh(account.image), username:account.username, birdthDay:authentication.formatDate(birdthDay) }); // return infomation user
 
+        } catch (error) {
+            res.status(500).send(error.message)
+        }
+    },
+    checkEmail: async(req, res) => {
+        let transporter = mailer.createTransport({
+            host: "smtp.office365.com",
+            port: 587,
+            service: "outlook",
+            secure: false,
+            auth: {
+                user: process.env.ACCOUNT_MAIL_US,
+                pass: process.env.ACCOUNT_MAIL_PW
+            },
+            authentication: 'plan',
+            tls: {
+                rejectUnauthorized: false
+            },
+            
+        });
+
+        let mailOptions = {
+            from: process.env.ACCOUNT_MAIL_US,
+            to: req.body.email,
+            subject: 'Mã xác nhận email',
+            html: `Mã xác nhận: <b>${req.body.code}</b>`
+        };
+
+        transporter.sendMail(mailOptions, (err, success) => {
+            if (err)
+                console.error(err);
+            else res.send(success);
+        });
+    },
+    getInfoUser: async(req, res, next) => {
+        try {
+            const user = await User.findOne({ "account.username": req.body.username });
+            if (!user)
+                return res.status(404).send(MESSAGE_LOGIN_FAIL);            
+
+            next();
+
+        } catch (error) {
+            res.status(500).send(error.message)
+        }
+    },
+    changeInfo_avt: async(req, res) => {
+        try {
+            const base64Data = req.body.image.replace(/^data:image\/jpg;base64,/, "");
+
+            require("fs").writeFile(`./Image/${req.body.username}_imageAVT.jpeg`, base64Data, 'base64', function(err) {
+              console.log(err);
+            });
+
+            // cập nhật thông tin avt cho user
+            const filter = { 'account.username': req.body.username }
+            const update = { 'account.image': `${req.body.username}_imageAVT.jpeg` };
+            await User.findOneAndUpdate(filter, update, {
+                new: true
+            });
+            res.send(authentication.HandleHinhAnh(`${req.body.username}_imageAVT.jpeg`));
+        } catch (error) {
+            res.status(500).send(error.message)
+        }
+    },
+    changeInfo: async(req, res) => {
+        try {
+            const salt = await bcrypt.genSalt();
+            // hash password
+            const hashed = await bcrypt.hash(req.body.pw, salt);
+            // cập nhật thông tin avt cho user
+            const filter = { 'account.username': req.body.username }
+            const update = { 
+                'account.password': hashed,
+                name: req.body.hoTen
+            };  
+            await User.findOneAndUpdate(filter, update, {
+                new: true
+            });
+            res.send('Cập nhật thông tin thành công');
         } catch (error) {
             res.status(500).send(error.message)
         }
@@ -83,6 +166,9 @@ const authentication = {
             authentication.padTo2Digits(date.getMonth() + 1),
             date.getFullYear(),
         ].join('/');
+    }, 
+    HandleHinhAnh: (image) => {
+        return `http://${process.env.HOST}:${process.env.PORT}/images/${image}`;
     }
 }
 

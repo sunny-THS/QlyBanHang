@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -40,6 +41,7 @@ public class DangNhap extends AppCompatActivity {
     ImageButton btnExit;
     MaterialButton btnDk, btnDn;
     EditText txtTenDN, txtMatKhau;
+    TextView fogetpass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +52,12 @@ public class DangNhap extends AppCompatActivity {
         txtTenDN = findViewById(R.id.username);
         txtMatKhau = findViewById(R.id.password);
         btnDn = findViewById(R.id.btndn);
+        fogetpass = findViewById(R.id.fogetpass);
+
+        fogetpass.setOnClickListener(e -> {
+
+        });
+
         btnDn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -107,11 +115,12 @@ public class DangNhap extends AppCompatActivity {
                         thongTinTK.setGioiTinh(jsonObject.getBoolean("sex") ? "nam" : "nữ");
                         thongTinTK.setSdt(jsonObject.getString("phoneNumbers"));
                         thongTinTK.setUsername(jsonObject.getString("username"));
+                        thongTinTK.setImage(jsonObject.getString("image"));
 
                         // lưu vào sqlite
                         // lưu thông tin tài khoản
                         tbTaiKhoan taiKhoan = new tbTaiKhoan(this);
-                        taiKhoan.insert(new TaiKhoan(thongTinTK.getId(), thongTinTK.getUsername()));
+                        taiKhoan.insert(new TaiKhoan(thongTinTK.getId(), thongTinTK.getUsername(), thongTinTK.getImage()));
 
                         tbThongTinTK tttk = new tbThongTinTK(this);
                         tttk.insert(thongTinTK);

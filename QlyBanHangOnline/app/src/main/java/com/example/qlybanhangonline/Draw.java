@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.qlybanhangonline.database.DbHelper;
 import com.example.qlybanhangonline.database.tbGioHang;
 import com.example.qlybanhangonline.database.tbTaiKhoan;
@@ -98,6 +100,17 @@ public class Draw extends AppCompatActivity implements XuLy {
                         finish();
                         startActivity(getIntent());
                     }break;
+                    case R.id.nav_login: {
+                        tbTaiKhoan taiKhoan = new tbTaiKhoan(Draw.this);
+                        TaiKhoan tk = taiKhoan.getTK();
+                        if (tk == null) {
+                            Intent intent = new Intent(Draw.this, DangNhap.class);
+                            startActivity(intent);
+                        }
+                    } break;
+                    case R.id.nav_info: {
+                        startActivity(new Intent(Draw.this, ThongTinTaiKhoan.class));
+                    } break;
                 }
                 binding.appBarDraw.toolbar.setTitle(item.getTitle());
                 binding.drawerLayout.closeDrawer(GravityCompat.START); // hiệu ứng đóng
@@ -111,19 +124,11 @@ public class Draw extends AppCompatActivity implements XuLy {
         img = nav_header.findViewById(R.id.imageViewNguoiDung);
         lbName = nav_header.findViewById(R.id.txtTenNguoiDung);
 
-        img.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tbTaiKhoan taiKhoan = new tbTaiKhoan(Draw.this);
-                TaiKhoan tk = taiKhoan.getTK();
-                if (tk == null) {
-                    Intent intent = new Intent(Draw.this, DangNhap.class);
-                    startActivity(intent);
-                }
-            }
-        });
-
         MenuItem item_exit = navigationView.getMenu().findItem(R.id.nav_exit);
+        MenuItem item_login = navigationView.getMenu().findItem(R.id.nav_login);
+        MenuItem item_info = navigationView.getMenu().findItem(R.id.nav_info);
+        MenuItem item_donHang = navigationView.getMenu().findItem(R.id.nav_hoaDon);
+
         tbTaiKhoan taiKhoan = new tbTaiKhoan(Draw.this);
 
         tbThongTinTK thongTinTK = new tbThongTinTK(Draw.this);
@@ -132,10 +137,20 @@ public class Draw extends AppCompatActivity implements XuLy {
         TaiKhoan tk = taiKhoan.getTK();
         if (tk == null) {
             item_exit.setVisible(false);
+            item_login.setVisible(true);
+            item_info.setVisible(false);
+            item_donHang.setVisible(false);
         }else {
             item_exit.setVisible(true);
+            item_login.setVisible(false);
+            item_donHang.setVisible(true);
+
             lbName.setText(tttk.getTen());
-            img.setImageResource(tttk.getGioiTinh().equals("nam") ? R.drawable.boy : R.drawable.female);
+
+            // set ảnh đại diện
+            Glide.with(Draw.this).load(tk.getImage())
+                    .diskCacheStrategy(DiskCacheStrategy.NONE)
+                    .skipMemoryCache(true).into(img);
         }
 
         // bắt intent giỏ hàng
@@ -216,4 +231,5 @@ public class Draw extends AppCompatActivity implements XuLy {
         GioHangFragment gioHangFragment = (GioHangFragment) getSupportFragmentManager().findFragmentById(R.id.FrameData);
         gioHangFragment.capNhatTongTien();
     }
+
 }

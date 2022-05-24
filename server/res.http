@@ -46,13 +46,36 @@ GET http://localhost:5123/bills
 }
 
 ### get bill's username
-GET http://localhost:5123/bills/us
+POST  http://localhost:5123/bills/us
 Content-Type: application/json
 
 {
     "username": "Từ Huệ Sơn"
 }
 
+### xác nhận đơn hàng
+POST  http://localhost:5123/bills/xacNhanDon
+Content-Type: application/json
+
+{
+    "id": "628526e4e3dc0137c50d0cd2"
+}
+
+### xác nhận đơn hàng hoàn thành
+POST  http://localhost:5123/bills/xacNhanDon
+Content-Type: application/json
+
+{
+    "id": "628522c9e3dc0137c50d0cb6",
+    "trangThai": "x"
+}
+
+### get bill's id 
+GET http://localhost:5123/bills/id/628a442bd19d1592a70b86b4
+
+{
+    
+}
 ### hóa đơn 
 POST http://localhost:5123/products/buy
 Content-Type: application/json
@@ -61,13 +84,14 @@ Content-Type: application/json
     "user": {
         "username": "tuhueson",
         "email": "tuhueson@gmail.com",
-        "phoneNumbers": "0938252793"
+        "phoneNumbers": "0938252793",
+        "id": "6284ec60c67a01566f5e5112"
     },
     "diaChi": "Vĩnh lộc B",
     "chiTietDonHang":[
         {
             "tenSP": "Adapter Sạc Type C PD 25W Samsung EP-TA800",
-            "soLuong": 2,
+            "soLuong": 1,
             "gia": 490000
         },
         {
@@ -92,11 +116,26 @@ Content-Type: application/json
         "phoneNumbers": "0938252793"
     }
 }
-### login
+### login 12345
 POST http://localhost:5123/auth/login
 Content-Type: application/json
 
 {
     "username": "tuhueson",
-    "pw": "123456789"
+    "pw": "tuhueson522001" 
+}
+
+### send mail ******
+POST http://localhost:5123/auth/ckMail
+Content-Type: application/json
+
+{
+    "email": "tuhueson@gmail.com",
+    "code": "26943" 
+}
+### map api
+GET  http://localhost:5123/api/map/namePlace/140 lê trọng tấn
+
+{
+     
 }

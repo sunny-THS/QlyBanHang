@@ -85,8 +85,10 @@ public class GioHangFragment extends Fragment implements XuLy {
                     Intent intent = new Intent(view.getContext(), DangNhap.class);
                     startActivity(intent);
                 }else {
+                    tbTaiKhoan tbTaiKhoan = new tbTaiKhoan(view.getContext());
                     tbThongTinTK tbThongTinTK = new tbThongTinTK(view.getContext());
                     ThongTinTK thongTinTK = tbThongTinTK.getTTTK();
+                    thongTinTK.setUsername(tk.getUsername());
 
                     Bundle data = new Bundle();
                     data.putSerializable("dataTK", thongTinTK);

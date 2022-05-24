@@ -3,6 +3,7 @@
     package="com.example.qlybanhangonline">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QlyBanHangOnline"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".QuenMatKhau"
+            android:exported="false"
+            android:theme="@style/Theme.QlyBanHangOnline.NoActionBar" />
+        <activity
+            android:name=".ChiTietHoaDon"
+            android:exported="false"
+            android:theme="@style/Theme.QlyBanHangOnline.NoActionBar" />
+        <activity
+            android:name=".ThongTinTaiKhoan"
+            android:exported="false"
+            android:theme="@style/Theme.QlyBanHangOnline.NoActionBar" />
         <activity
             android:name=".ThongTinDatHang"
             android:exported="false"

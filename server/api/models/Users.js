@@ -9,7 +9,8 @@ const UserSchema = new Schema(
         phoneNumbers: String,
         account: {
             username: String,
-            password: String
+            password: String,
+            image: String
         },
     },
     { timestamps: true }

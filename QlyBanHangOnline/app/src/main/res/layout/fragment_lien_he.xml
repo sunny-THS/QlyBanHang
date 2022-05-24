@@ -75,5 +75,4 @@
         android:textColorLink="#03A9F4"
         android:textSize="10pt"
         android:textStyle="italic" />
-
 </RelativeLayout>

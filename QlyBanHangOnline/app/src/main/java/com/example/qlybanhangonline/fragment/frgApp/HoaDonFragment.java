@@ -88,8 +88,6 @@ public class HoaDonFragment extends Fragment {
 
             tbThongTinTK thongTinTK = new tbThongTinTK(getContext());
 
-            RequestQueue requestQueue = Volley.newRequestQueue(getContext());
-            String URL = this.getString(R.string.url) + "/auth/login";
             JSONObject jsonBody = new JSONObject();
             try {
                 jsonBody.put("username", thongTinTK.getTTTK().getTen());
@@ -111,8 +109,9 @@ public class HoaDonFragment extends Fragment {
                                 JSONObject objectHD = jsonArray.getJSONObject(i);
                                 hoaDons.add(new HoaDon(
                                         objectHD.getString("_id"),
-                                        objectHD.getString("createdAt"),
-                                        objectHD.getDouble("donGia")
+                                        objectHD.getString("ngayLap"),
+                                        objectHD.getDouble("donGia"),
+                                        objectHD.getString("TrangThai")
                                 ));
                             }
 

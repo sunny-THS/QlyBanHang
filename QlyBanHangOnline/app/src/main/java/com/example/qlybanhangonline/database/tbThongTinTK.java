@@ -52,7 +52,7 @@ public class tbThongTinTK extends DbHelper {
         contentValues.put("SDT", tttk.getSdt());
 
         String[] _id = {String.valueOf(tttk.getId_tttk())};
-        db.update("tbTaiKhoan", contentValues,"id=?", _id);
+        db.update("tbThongTinTK", contentValues,"id=?", _id);
         db.close();
     }
 

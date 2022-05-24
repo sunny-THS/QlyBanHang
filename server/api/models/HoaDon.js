@@ -9,7 +9,8 @@ const HoaDonSchema = new Schema(
             tenSP: String,
             soLuong: Number,
             gia: Number
-        }]
+        }],
+        TrangThai: String
     },
     { timestamps: true }
 );

@@ -16,18 +16,32 @@
             android:id="@+id/nav_hoaDon"
             android:icon="@drawable/ic_baseline_receipt_long_24"
             android:title="@string/menu_donHang" />
-    </group>
-    <group
-        android:checkableBehavior="single"
-        android:id="@+id/grLogout">
         <item
             android:id="@+id/nav_lienHe"
             android:icon="@drawable/ic_baseline_phone_24"
             android:title="@string/menu_lienHe"/>
     </group>
-    <item
-        android:id="@+id/nav_exit"
-        android:title="Đăng xuất"
-        android:icon="@drawable/ic_baseline_exit_to_app_24"
-        />
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/grLogout">
+        <item android:title="Tài khoản" >
+            <menu>
+                <item
+                    android:id="@+id/nav_info"
+                    android:title="Thông tin cá nhân"
+                    android:icon="@drawable/ic_baseline_person_24"
+                    />
+                <item
+                    android:id="@+id/nav_login"
+                    android:title="Đăng nhập"
+                    android:icon="@drawable/ic_baseline_login_24"
+                    />
+                <item
+                    android:id="@+id/nav_exit"
+                    android:title="Đăng xuất"
+                    android:icon="@drawable/ic_baseline_exit_to_app_24"
+                    />
+            </menu>
+        </item>
+    </group>
 </menu>

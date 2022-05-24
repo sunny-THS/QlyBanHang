@@ -14,13 +14,13 @@ const port = process.env.PORT || 5000;
 
 const app = express();
 
-app.use(express.json(/*{ limit: '3mb' }*/));
+app.use(express.json({ limit: '3mb' }));
 
 // routes
 app.use('/images', rImg);
 app.use('/products', rProduct);
 app.use('/auth', rAuth);
-app.use('/bills', rHoaDon);
+app.use('/bills', rHoaDon)
 
 app.use((req, res, next) => {
     const err = new Error('not found');

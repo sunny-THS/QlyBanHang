@@ -3,10 +3,21 @@ package com.example.qlybanhangonline.obj;
 public class HoaDon {
     private String id;
 
-    public HoaDon(String id, String ngayLap, double donGia) {
+    public String getTrangThai() {
+        return trangThai;
+    }
+
+    public void setTrangThai(String trangThai) {
+        this.trangThai = trangThai;
+    }
+
+    private String trangThai;
+
+    public HoaDon(String id, String ngayLap, double donGia, String trangThai) {
         this.id = id;
         this.ngayLap = ngayLap;
         this.donGia = donGia;
+        this.trangThai = trangThai;
     }
 
     public String getNgayLap() {
