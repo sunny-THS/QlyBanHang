@@ -91,6 +91,8 @@ public class QuenMatKhau extends AppCompatActivity {
             }
 
             // thực hiện đổi mật khẩu
+            changePw();
+            finish();
         });
     }
 
@@ -120,6 +122,56 @@ public class QuenMatKhau extends AppCompatActivity {
                             Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
 
                             binding.btnXacNhan.setImageDrawable(getDrawable(R.drawable.ic_baseline_close));
+                        } catch (UnsupportedEncodingException e) {
+                            e.printStackTrace();
+                        }
+                    }) {
+                @Override
+                public String getBodyContentType() {
+                    return "application/json; charset=utf-8";
+                }
+
+                @Override
+                public byte[] getBody() throws AuthFailureError {
+                    try {
+                        return requestBody == null ? null : requestBody.getBytes("utf-8");
+                    } catch (UnsupportedEncodingException uee) {
+                        VolleyLog.wtf("Unsupported Encoding while trying to get the bytes of %s using %s", requestBody, "utf-8");
+                        return null;
+                    }
+                }
+            };
+
+            requestQueue.add(stringRequest);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void changePw() {
+        try {
+            RequestQueue requestQueue = Volley.newRequestQueue(this);
+            String URL = this.getString(R.string.url) + "/auth/EditInfo_Pw";
+
+            JSONObject json_thongTinDangKy = new JSONObject();
+            json_thongTinDangKy.put("pw", binding.password.getText().toString().trim());
+            json_thongTinDangKy.put("username", binding.username.getText().toString().trim());
+
+            final String requestBody = json_thongTinDangKy.toString();
+
+            StringRequest stringRequest = new StringRequest(Request.Method.POST, URL,
+                    res -> {
+                        Toast.makeText(this, res, Toast.LENGTH_SHORT).show();
+                    },
+                    volleyErr -> {
+                        if (volleyErr == null || volleyErr.networkResponse == null) {
+                            return;
+                        }
+
+                        try {
+                            String message = new String(volleyErr.networkResponse.data,"UTF-8");
+
+                            Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
                         } catch (UnsupportedEncodingException e) {
                             e.printStackTrace();
                         }

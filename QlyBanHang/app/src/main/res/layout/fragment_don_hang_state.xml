@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:text="id hóa đơn"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <TextView
+        android:id="@+id/donGia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/text_margin"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textStyle="bold"
+        android:textColor="#f00"
+        android:layout_marginBottom="16dp"
+        android:text="giá"
+        android:layout_below="@id/item_id"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4dp">
+
+        <TextView
+            android:id="@+id/itemNgay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10/01/2020"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="6dp"
+            android:textSize="7pt" />
+
+        <TextView
+            android:id="@+id/itemTinhTrang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemNgay"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:background="#02C85B"
+            android:text="Trạng thái"
+            android:paddingVertical="2dp"
+            android:paddingHorizontal="4dp"
+            android:textStyle="bold"
+            android:textSize="7pt" />
+    </RelativeLayout>
+</RelativeLayout>

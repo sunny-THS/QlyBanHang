@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonHang">
+
+    <ImageButton
+        android:id="@+id/btnQuayLai"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:textColor="@color/white" />
+    <ImageButton
+        android:id="@+id/btnFilter"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_baseline_filter_list_24"
+        android:textColor="@color/white" />
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/btnQuayLai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ViewSoLuongDonHang"
+        android:paddingHorizontal="25dp">
+
+        <TextView
+            android:id="@+id/CN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:drawableStart="@drawable/ic_baseline_circle_r"
+            android:padding="5dp"
+            android:text="10"
+            android:textSize="12pt" />
+
+        <TextView
+            android:id="@+id/GH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:drawableStart="@drawable/ic_baseline_circle_24"
+            android:padding="5dp"
+            android:text="10"
+            android:textSize="12pt"/>
+
+        <TextView
+            android:id="@+id/HT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:drawableStart="@drawable/ic_baseline_circle_24_g"
+            android:padding="5dp"
+            android:text="10"
+            android:textSize="12pt" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/viewTT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/viewTongGiaTri"
+        android:layout_below="@id/ViewSoLuongDonHang" />
+
+    <RelativeLayout
+        android:id="@+id/viewTongGiaTri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#00C4FF"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng giá trị:"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/txtTongTien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="10.000.000"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+</RelativeLayout>

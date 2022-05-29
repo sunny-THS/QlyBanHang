@@ -15,6 +15,7 @@ const mailer = require('nodemailer');
 
 const MESSAGE_LOGIN_FAIL = "Thông tin đăng nhập không chính xác!";
 const MESSAGE_USER_EXISTS = "Tên đăng nhập đã tồn tại!";
+const MESSAGE_USER_NOT_EXISTS = "Tên đăng nhập không tồn tại!";
 const MESSAGE_SIGNIN_SUCCESS = "Đăng ký thành công";
 
 const authentication = {
@@ -76,6 +77,18 @@ const authentication = {
             res.status(500).send(error.message)
         }
     },
+    ckAdmin: async(req, res, next) => {
+        try {
+            if (req.body.username != 'admin')
+            {
+                res.status(400).send("Vui lòng nhập tài khoản admin")
+            }
+            next();
+
+        } catch (error) {
+            res.status(500).send(error.message)
+        }
+    },
     checkEmail: async(req, res) => {
         let transporter = mailer.createTransport({
             host: "smtp.office365.com",
@@ -86,7 +99,6 @@ const authentication = {
                 user: process.env.ACCOUNT_MAIL_US,
                 pass: process.env.ACCOUNT_MAIL_PW
             },
-            authentication: 'plan',
             tls: {
                 rejectUnauthorized: false
             },
@@ -110,8 +122,9 @@ const authentication = {
         try {
             const user = await User.findOne({ "account.username": req.body.username });
             if (!user)
-                return res.status(404).send(MESSAGE_LOGIN_FAIL);            
+                return res.status(404).send(MESSAGE_USER_NOT_EXISTS);            
 
+            req.body.email = user.email;
             next();
 
         } catch (error) {
@@ -152,6 +165,24 @@ const authentication = {
                 new: true
             });
             res.send('Cập nhật thông tin thành công');
+        } catch (error) {
+            res.status(500).send(error.message)
+        }
+    },
+    changePw: async(req, res) => {
+        try {
+            const salt = await bcrypt.genSalt();
+            // hash password
+            const hashed = await bcrypt.hash(req.body.pw, salt);
+            // cập nhật thông tin avt cho user
+            const filter = { 'account.username': req.body.username }
+            const update = { 
+                'account.password': hashed,
+            };  
+            await User.findOneAndUpdate(filter, update, {
+                new: true
+            });
+            res.send('Đổi mật khẩu thành công');
         } catch (error) {
             res.status(500).send(error.message)
         }

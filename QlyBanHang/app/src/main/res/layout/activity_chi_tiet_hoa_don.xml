@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChiTietHoaDon">
+
+    <ImageButton
+        android:id="@+id/btnQuayLai"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/txtMaHoaDon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnQuayLai"
+        android:layout_marginStart="@dimen/text_margin"
+        android:layout_marginTop="@dimen/text_margin"
+        android:layout_marginEnd="@dimen/text_margin"
+        android:text="id hóa đơn"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/donGia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMaHoaDon"
+        android:layout_marginHorizontal="@dimen/text_margin"
+        android:layout_marginBottom="10dp"
+        android:text="giá"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#f00"
+        android:textSize="9pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/itemTenKH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/donGia"
+        android:layout_marginHorizontal="@dimen/text_margin"
+        android:layout_marginBottom="6dp"
+        android:text="Khách hàng: ABC"
+        android:textColor="#000"
+        android:textSize="9pt"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/itemNgay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemTenKH"
+        android:layout_marginHorizontal="@dimen/text_margin"
+        android:layout_marginBottom="6dp"
+        android:text="10/01/2020"
+        android:textColor="#000"
+        android:textSize="9pt" />
+
+    <TextView
+        android:id="@+id/lbTT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemNgay"
+        android:layout_marginHorizontal="@dimen/text_margin"
+        android:layout_marginBottom="6dp"
+        android:text="Trạng thái:"
+        android:textColor="#000"
+        android:textSize="9pt" />
+
+    <TextView
+        android:id="@+id/itemTinhTrang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemNgay"
+        android:layout_toRightOf="@id/lbTT"
+        android:background="#02C85B"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="2dp"
+        android:text="Trạng thái"
+        android:layout_marginBottom="10dp"
+        android:textColor="#fff"
+        android:textSize="9pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lbSp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemTinhTrang"
+        android:layout_marginHorizontal="@dimen/text_margin"
+        android:layout_marginBottom="7dp"
+        android:text="Các sản phẩm:"
+        android:textColor="#000"
+        android:textSize="10pt" />
+
+    <FrameLayout
+        android:id="@+id/lstSanPham"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lbSp"
+        android:layout_above="@id/btnXacNhan"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/btnXacNhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#FFFB9905"
+        android:text="Xác nhận"
+        android:textAllCaps="false"
+        android:textSize="10pt" />
+</RelativeLayout>

@@ -55,7 +55,7 @@ public class DangNhap extends AppCompatActivity {
         fogetpass = findViewById(R.id.fogetpass);
 
         fogetpass.setOnClickListener(e -> {
-
+            startActivity(new Intent(DangNhap.this, QuenMatKhau.class));
         });
 
         btnDn.setOnClickListener(new View.OnClickListener() {

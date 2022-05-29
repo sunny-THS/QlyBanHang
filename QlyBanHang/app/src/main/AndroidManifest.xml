@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.qlybanhang">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,8 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QlyBanHang">
         <activity
+            android:name=".ChiTietHoaDon"
+            android:exported="false" />
+        <activity
+            android:name=".DonHang"
+            android:exported="false"
+            android:theme="@style/Theme.QlyBanHang.NoActionBar" />
+        <activity
+            android:name=".Draw"
+            android:exported="false"
+            android:label="@string/title_activity_draw"
+            android:theme="@style/Theme.QlyBanHang.NoActionBar" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.QlyBanHang.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

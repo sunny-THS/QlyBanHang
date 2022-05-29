@@ -3,9 +3,46 @@ const SanPham = require('../models/SanPham');
 
 const hoaDon = {
     getBills: async (req, res) => {
-        await HoaDon.find({})
+        await HoaDon.find({}).sort({ createdAt: -1 })
             .then(data => {
-                res.json(data);
+                data = data.map(hd => {
+                    return {
+                        _id:hd._id,
+                        donGia:hd.donGia,
+                        ngayLap:hoaDon.formatDate(hd.createdAt),
+                        TrangThai: hd.TrangThai
+                    };
+                }).filter(hd => hd.ngayLap.includes(req.body.year))
+
+                const countCN = data.filter(d=>d.TrangThai == "Chưa xác nhận").length;
+                const countGH = data.filter(d=>d.TrangThai == "Đang giao hàng").length;
+                const countHT = data.filter(d=>d.TrangThai == "Hoàn thành").length;
+
+                const totalBills = data.reduce((t, { donGia }) => t + donGia, 0)
+                
+                res.json({ HT: countHT, GH: countGH, CN: countCN, totalBills, data });
+            })
+            .catch(err => res.json(err));
+    },
+    getBills_state: async (req, res) => {
+        await HoaDon.find({ TrangThai: req.body.state }).sort({ createdAt: -1 })
+            .then(data => {
+                data = data.map(hd => {
+                    return {
+                        _id:hd._id,
+                        donGia:hd.donGia,
+                        ngayLap:hoaDon.formatDate(hd.createdAt),
+                        TrangThai: hd.TrangThai
+                    };
+                })
+
+                const countCN = data.filter(d=>d.TrangThai == "Chưa xác nhận").length;
+                const countGH = data.filter(d=>d.TrangThai == "Đang giao hàng").length;
+                const countHT = data.filter(d=>d.TrangThai == "Hoàn thành").length;
+
+                const totalBills = data.reduce((t, { donGia }) => t + donGia, 0)
+                
+                res.json({ HT: countHT, GH: countGH, CN: countCN, totalBills, data });
             })
             .catch(err => res.json(err));
     },
@@ -33,7 +70,8 @@ const hoaDon = {
                     donGia:hd.donGia,
                     ngayLap:hoaDon.formatDate(hd.createdAt),
                     TrangThai: hd.TrangThai,
-                    chiTietDonHang: hd.chiTietDonHang
+                    chiTietDonHang: hd.chiTietDonHang,
+                    tenKH: hd.tenKH
                 };
             })
             res.json(data);

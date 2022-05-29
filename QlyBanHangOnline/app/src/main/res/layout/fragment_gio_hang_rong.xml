@@ -3,16 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.frgMenu.GioHangRongFragment">
+    tools:context=".fragment.frgMenu.GioHangRongFragment"
+    android:background="#6596B6">
 
     <!-- TODO: Update blank fragment layout -->
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/gio_hang_rong"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:textStyle="bold"
+        android:layout_below="@id/gifImageView"
+        android:text="Chưa có sản phẩm nào"
         android:textSize="16pt"
-        android:text="Giỏ hàng rỗng!" />
-
-
+        android:textStyle="bold" />
 </RelativeLayout>
