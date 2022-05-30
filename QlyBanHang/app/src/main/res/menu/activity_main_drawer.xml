@@ -13,4 +13,17 @@
             android:icon="@drawable/ic_baseline_receipt"
             android:title="@string/menu_gallery" />
     </group>
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/grLogout">
+        <item android:title="Tài khoản" >
+            <menu>
+                <item
+                    android:id="@+id/nav_exit"
+                    android:title="Đăng xuất"
+                    android:icon="@drawable/ic_baseline_exit_to_app_24"
+                    />
+            </menu>
+        </item>
+    </group>
 </menu>

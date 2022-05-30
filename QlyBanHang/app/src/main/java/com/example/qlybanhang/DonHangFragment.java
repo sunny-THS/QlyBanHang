@@ -99,7 +99,7 @@ public class DonHangFragment extends Fragment {
                             pgkData.putIntegerArrayList("soLuongDH", lstSoLuong);
                             pgkData.putDouble("TongGiaTri", jsonObject.getDouble("totalBills"));
 
-                            ((DonHang)getContext()).xuLySoLuong(pgkData);
+                            ((DonHang)getContext()).xuLyThongTin(pgkData);
 
 
                             JSONArray jsonArray = jsonObject.getJSONArray("data");

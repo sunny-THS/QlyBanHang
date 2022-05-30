@@ -57,7 +57,7 @@ public class ThongTinSanPham extends AppCompatActivity {
         binding.btnQuayLai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ThongTinSanPham.this, Draw.class));
+                finish();
             }
         });
 

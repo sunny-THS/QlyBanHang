@@ -75,6 +75,8 @@ public class ChiTietHoaDon extends AppCompatActivity {
 
                         binding.itemNgay.setText(String.format("Ngày lập: %s", jsonObject.getString("ngayLap")));
 
+                        binding.itemDC.setText(String.format("Địa chỉ: %s", jsonObject.getString("diaChi")));
+
                         binding.itemTinhTrang.setText(jsonObject.getString("TrangThai"));
                         switch (jsonObject.getString("TrangThai")) {
                             case "Chưa xác nhận":

@@ -39,12 +39,20 @@ GET http://localhost:5123/products/company
 }
 
 ### get bills
-GET http://localhost:5123/bills
+POST http://localhost:5123/bills
+Content-Type: application/json
 
 {
-    
+    "year" : 2022
 }
+### get bills
+POST  http://localhost:5123/bills/state
+Content-Type: application/json
 
+{
+    "year" : 2022,
+    "state": "Đang giao hàng"
+}
 ### get bill's username
 POST  http://localhost:5123/bills/us
 Content-Type: application/json
@@ -58,7 +66,7 @@ POST  http://localhost:5123/bills/xacNhanDon
 Content-Type: application/json
 
 {
-    "id": "628526e4e3dc0137c50d0cd2"
+    "id": "628a442bd19d1592a70b86b4"
 }
 
 ### xác nhận đơn hàng hoàn thành
@@ -66,7 +74,7 @@ POST  http://localhost:5123/bills/xacNhanDon
 Content-Type: application/json
 
 {
-    "id": "628522c9e3dc0137c50d0cb6",
+    "id": "628526e4e3dc0137c50d0cd2",
     "trangThai": "x"
 }
 
@@ -107,14 +115,22 @@ Content-Type: application/json
 
 {
     "user" : {
-        "username": "tuhueson",
+        "username": "admin",
         "pw": "123456789",
-        "name": "Từ Huệ Sơn",
-        "email": "tuhueson@gmail.com",
-        "birdthDay": "02/05/2001",
+        "name": "Shop bán hàng",
+        "email": "shop@gmail.com",
+        "birdthDay": "05/02/2001",
         "sex": true,
-        "phoneNumbers": "0938252793"
+        "phoneNumbers": "0938252791"
     }
+}
+### login 12345
+POST http://localhost:5123/auth/admin
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "pw": "123456789" 
 }
 ### login 12345
 POST http://localhost:5123/auth/login
@@ -122,7 +138,7 @@ Content-Type: application/json
 
 {
     "username": "tuhueson",
-    "pw": "tuhueson522001" 
+    "pw": "123" 
 }
 
 ### send mail ******
@@ -131,6 +147,14 @@ Content-Type: application/json
 
 {
     "email": "tuhueson@gmail.com",
+    "code": "26943" 
+}
+### send mail ******
+POST http://localhost:5123/auth/ckUsername
+Content-Type: application/json
+
+{
+    "username": "tuhueson",
     "code": "26943" 
 }
 ### map api

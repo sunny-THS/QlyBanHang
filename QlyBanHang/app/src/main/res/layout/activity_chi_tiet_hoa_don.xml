@@ -51,6 +51,7 @@
         android:textColor="#000"
         android:textSize="9pt"
         android:layout_marginTop="16dp"/>
+
     <TextView
         android:id="@+id/itemNgay"
         android:layout_width="wrap_content"
@@ -61,12 +62,22 @@
         android:text="10/01/2020"
         android:textColor="#000"
         android:textSize="9pt" />
+    <TextView
+        android:id="@+id/itemDC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemNgay"
+        android:layout_marginHorizontal="@dimen/text_margin"
+        android:layout_marginBottom="6dp"
+        android:text="Địa chỉ"
+        android:textColor="#000"
+        android:textSize="9pt" />
 
     <TextView
         android:id="@+id/lbTT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/itemNgay"
+        android:layout_below="@id/itemDC"
         android:layout_marginHorizontal="@dimen/text_margin"
         android:layout_marginBottom="6dp"
         android:text="Trạng thái:"
@@ -77,13 +88,13 @@
         android:id="@+id/itemTinhTrang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/itemNgay"
+        android:layout_below="@id/itemDC"
+        android:layout_marginBottom="10dp"
         android:layout_toRightOf="@id/lbTT"
         android:background="#02C85B"
         android:paddingHorizontal="4dp"
         android:paddingVertical="2dp"
         android:text="Trạng thái"
-        android:layout_marginBottom="10dp"
         android:textColor="#fff"
         android:textSize="9pt"
         android:textStyle="bold" />

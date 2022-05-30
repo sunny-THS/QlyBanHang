@@ -42,6 +42,8 @@ public class QuenMatKhau extends AppCompatActivity {
 
                 return;
             }
+
+            binding.btnXacNhan.setEnabled(false);
             sendCode();
         });
 

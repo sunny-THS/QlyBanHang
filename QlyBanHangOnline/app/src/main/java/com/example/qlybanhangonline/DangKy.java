@@ -85,6 +85,14 @@ public class DangKy extends AppCompatActivity implements View.OnClickListener {
                 return;
             }
 
+            //Kiểm tra định dạng email
+            if(!Validate.check_Email(txtEmail.getText().toString()))
+            {
+                txtEmail.setError("Vui lòng nhập email chính xác !");
+                txtEmail.requestFocus();
+                return;
+            }
+
             btnXacNhan.setEnabled(false);
 
             // tiến hành gửi email
@@ -301,6 +309,8 @@ public class DangKy extends AppCompatActivity implements View.OnClickListener {
                             String message = new String(volleyErr.networkResponse.data,"UTF-8");
 
                             Toast.makeText(DangKy.this, message, Toast.LENGTH_SHORT).show();
+
+                            btnXacNhan.setEnabled(true);
 
                             btnXacNhan.setImageDrawable(getDrawable(R.drawable.ic_baseline_close));
                         } catch (UnsupportedEncodingException e) {

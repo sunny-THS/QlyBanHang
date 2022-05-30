@@ -42,13 +42,15 @@ public class DonHangStateFragment extends Fragment {
     RecyclerView recyclerView;
 
     private String state;
+    private int year;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
      */
-    public DonHangStateFragment(String pState) {
+    public DonHangStateFragment(String pState, int year) {
         state = pState;
+        this.year = year;
     }
 
     @Override
@@ -78,6 +80,7 @@ public class DonHangStateFragment extends Fragment {
             JSONObject jsonBody = new JSONObject();
             try {
                 jsonBody.put("state", state);
+                jsonBody.put("year", year);
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -102,7 +105,7 @@ public class DonHangStateFragment extends Fragment {
                             pgkData.putIntegerArrayList("soLuongDH", lstSoLuong);
                             pgkData.putDouble("TongGiaTri", jsonObject.getDouble("totalBills"));
 
-                            ((DonHang)getContext()).xuLySoLuong(pgkData);
+                            ((DonHang)getContext()).xuLyThongTin(pgkData);
 
 
                             JSONArray jsonArray = jsonObject.getJSONArray("data");

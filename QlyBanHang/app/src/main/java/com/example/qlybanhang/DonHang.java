@@ -71,7 +71,7 @@ public class DonHang extends AppCompatActivity implements XuLyDonHang, NumberPic
             binding.HT.setBackgroundResource(0);
             binding.GH.setBackgroundResource(0);
 
-            replaceFragment(new DonHangStateFragment(strState[0]));
+            replaceFragment(new DonHangStateFragment(strState[0], year));
         });
 
         binding.GH.setOnClickListener(e -> { // đang giao hàng
@@ -98,7 +98,7 @@ public class DonHang extends AppCompatActivity implements XuLyDonHang, NumberPic
             binding.HT.setBackgroundResource(0);
             binding.CN.setBackgroundResource(0);
 
-            replaceFragment(new DonHangStateFragment(strState[1]));
+            replaceFragment(new DonHangStateFragment(strState[1], year));
         });
 
         binding.HT.setOnClickListener(e -> { // hoàn thành
@@ -125,12 +125,12 @@ public class DonHang extends AppCompatActivity implements XuLyDonHang, NumberPic
             binding.GH.setBackgroundResource(0);
             binding.CN.setBackgroundResource(0);
 
-            replaceFragment(new DonHangStateFragment(strState[2]));
+            replaceFragment(new DonHangStateFragment(strState[2], year));
         });
     }
 
     @Override
-    public void xuLySoLuong(Bundle bundle) {
+    public void xuLyThongTin(Bundle bundle) {
         ArrayList<Integer> lstSoLuong = bundle.getIntegerArrayList("soLuongDH");
 
         binding.HT.setText(lstSoLuong.get(0).toString());

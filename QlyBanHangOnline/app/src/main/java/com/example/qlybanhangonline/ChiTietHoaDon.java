@@ -59,6 +59,8 @@ public class ChiTietHoaDon extends AppCompatActivity {
 
                         binding.txtMaHoaDon.setText(jsonObject.getString("_id"));
 
+                        binding.itemDC.setText(String.format("Địa chỉ: %s", jsonObject.getString("diaChi")));
+
                         Locale localeVN = new Locale("vi", "VN");
                         NumberFormat vn = NumberFormat.getInstance(localeVN);
                         binding.donGia.setText(vn.format(jsonObject.getDouble("donGia")) + " VNĐ");

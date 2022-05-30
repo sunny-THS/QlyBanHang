@@ -200,9 +200,8 @@ public class Draw extends AppCompatActivity implements XuLy {
 
             @Override
             public boolean onMenuItemActionCollapse(MenuItem menuItem) {
-                replaceFragment(new HomeFragment());
-                binding.appBarDraw.toolbar.setTitle("Trang chủ");
-                currentFragment = R.id.nav_home; // gán cờ
+                finish();
+                startActivity(getIntent());
                 return true;
             }
         });

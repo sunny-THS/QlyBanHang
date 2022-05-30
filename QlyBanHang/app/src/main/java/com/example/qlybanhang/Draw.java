@@ -57,6 +57,13 @@ public class Draw extends AppCompatActivity {
                     case R.id.nav_home: case R.id.nav_gallery: {
                         startActivity(new Intent(Draw.this, DonHang.class));
                     }break;
+                    case R.id.nav_exit: {
+                        // onUpgrade db
+                        dbHelper.onUpgrade(null, 0, 0);
+
+                        finish();
+                        startActivity(new Intent(Draw.this, MainActivity.class));
+                    }break;
                 }
                 binding.drawerLayout.closeDrawer(GravityCompat.START); // hiệu ứng đóng
                 currentFragment = item.getItemId(); // gán cờ

@@ -10,7 +10,8 @@ const hoaDon = {
                         _id:hd._id,
                         donGia:hd.donGia,
                         ngayLap:hoaDon.formatDate(hd.createdAt),
-                        TrangThai: hd.TrangThai
+                        TrangThai: hd.TrangThai,
+                        diaChi: hd.diaChi
                     };
                 }).filter(hd => hd.ngayLap.includes(req.body.year))
 
@@ -32,9 +33,10 @@ const hoaDon = {
                         _id:hd._id,
                         donGia:hd.donGia,
                         ngayLap:hoaDon.formatDate(hd.createdAt),
-                        TrangThai: hd.TrangThai
+                        TrangThai: hd.TrangThai,
+                        diaChi: hd.diaChi
                     };
-                })
+                }).filter(hd => hd.ngayLap.includes(req.body.year))
 
                 const countCN = data.filter(d=>d.TrangThai == "Chưa xác nhận").length;
                 const countGH = data.filter(d=>d.TrangThai == "Đang giao hàng").length;
@@ -71,7 +73,8 @@ const hoaDon = {
                     ngayLap:hoaDon.formatDate(hd.createdAt),
                     TrangThai: hd.TrangThai,
                     chiTietDonHang: hd.chiTietDonHang,
-                    tenKH: hd.tenKH
+                    tenKH: hd.tenKH,
+                    diaChi: hd.diaChi
                 };
             })
             res.json(data);

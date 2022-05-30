@@ -16,6 +16,7 @@ const mailer = require('nodemailer');
 const MESSAGE_LOGIN_FAIL = "Thông tin đăng nhập không chính xác!";
 const MESSAGE_USER_EXISTS = "Tên đăng nhập đã tồn tại!";
 const MESSAGE_USER_NOT_EXISTS = "Tên đăng nhập không tồn tại!";
+const MESSAGE_EMAIL_EXISTS = "Địa chỉ email đã tồn tại!";
 const MESSAGE_SIGNIN_SUCCESS = "Đăng ký thành công";
 
 const authentication = {
@@ -89,7 +90,7 @@ const authentication = {
             res.status(500).send(error.message)
         }
     },
-    checkEmail: async(req, res) => {
+    sendEmail: async(req, res) => {
         let transporter = mailer.createTransport({
             host: "smtp.office365.com",
             port: 587,
@@ -125,6 +126,18 @@ const authentication = {
                 return res.status(404).send(MESSAGE_USER_NOT_EXISTS);            
 
             req.body.email = user.email;
+            next();
+
+        } catch (error) {
+            res.status(500).send(error.message)
+        }
+    },
+    checkEmail: async(req, res, next) => {
+        try {
+            const user = await User.findOne({ "email": req.body.email });
+            if (user)
+                return res.status(404).send(MESSAGE_EMAIL_EXISTS);
+
             next();
 
         } catch (error) {
