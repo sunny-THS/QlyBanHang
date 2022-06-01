@@ -2,7 +2,7 @@
     <string name="app_name">QlyBanHangOnline</string>
 
     <!--    địa chỉ của webservice-->
-    <string name="url">http://192.168.1.6:5123</string>
+    <string name="url">http://192.168.43.12:5123</string>
     <string name="title_activity_draw">Draw</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
